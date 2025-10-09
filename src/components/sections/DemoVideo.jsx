@@ -13,7 +13,7 @@ export default function HeroSection() {
           loop
           playsInline
         >
-          <source src="/video/hero.mp4" type="video/mp4" />
+          <source src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/hero.mp4" type="video/mp4" />
         </video>
 
         {/* Watch Demo button over video */}
