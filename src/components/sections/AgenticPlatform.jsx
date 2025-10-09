@@ -48,13 +48,13 @@ const SplitSection = () => {
           <div className="relative w-full">
             <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-gray-800 h-[300px] md:h-[400px]">
               <video
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 autoPlay
                 loop
                 muted
                 playsInline
               >
-                <source src="/video/saas.mp4" type="video/mp4" />
+                <source src="/video/qyoob.mp4" type="video/mp4" />
               </video>
             </div>
 
