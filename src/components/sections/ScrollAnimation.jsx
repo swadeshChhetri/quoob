@@ -35,7 +35,7 @@ const ScrollAnimationSection = () => {
         {/* Left Side */}
         <div className="flex-1 flex flex-col justify-center items-start space-y-6">
           <h2 className="text-white text-4xl md:text-5xl font-bold">
-            Interactive Scroll{" "}
+            Interactive Scroll
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
               Animation
             </span>
