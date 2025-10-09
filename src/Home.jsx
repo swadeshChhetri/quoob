@@ -7,7 +7,7 @@ import Overview from "./components/sections/Overview";
 import Footer from "./components/sections/Footer";
 import DataSource from "./components/sections/DataSource";
 import AgenticSection from "./components/sections/AgenticSection";
-// import ScrollAnimationSection from "./components/sections/ScrollAnimation";
+import ScrollAnimationSection from "./components/sections/ScrollAnimation";
 import DemoVideoSection from "./components/sections/DemoVideo";
 import DemoImage from "./components/sections/DemoImage";
 import StatsSection from "./components/sections/StatsData";
@@ -32,7 +32,7 @@ const Home = () => {
         <MultimodalSection />
         <UseCases />
         <DataSource />
-        {/* <ScrollAnimationSection /> */}
+        <ScrollAnimationSection />
         <StatsSection />
         <Overview />
         <PricingTableSection />
