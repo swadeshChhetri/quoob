@@ -3,7 +3,7 @@ import React from "react";
 const SplitSection = () => {
   return (
     <section className="bg-black text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div className="space-y-8">

@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="flex text-gray-400 space-x-5">
         <Link to={"/"}>Privacy Policy</Link>
         <Link to={"/"}>Terms & Conditions</Link>
-        <p>@ 2025 Quoob. All rights reserved.</p>
+        <p>@ 2025 Qyoob. All rights reserved.</p>
       </div>
     </footer>
   );

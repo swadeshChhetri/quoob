@@ -47,7 +47,7 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="bg-black text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -199,7 +199,7 @@ export default function ContactForm() {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-lime-500 to-green-600 hover:from-lime-500 hover:to-green-600 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25 flex items-center justify-center gap-3 group"
+                    className="w-full bg-gradient-to-r bg-lime-400 hover:bg-lime-500 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-lime-500/25 flex items-center justify-center gap-3 group"
                   >
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     SEND MESSAGE

@@ -16,18 +16,20 @@ const DataSource = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative flex items-center justify-center">
       <motion.img
         src="image/fullchart.png"
         alt="Full Chart"
-        className="w-full max-w-6xl h-auto rounded-lg shadow-lg"
+        className="w-full h-full bg-[#0a0a0a] rounded-xl border border-[#333] hover:border-lime-400/40
+        hover:shadow-[0_0_50px_-10px_rgba(163,255,102,0.4)]
+        overflow-hidden shadow-lg p-6"
         style={{ perspective: 1000 }}
         animate={{
           rotateX: mousePos.y,
           rotateY: mousePos.x,
-          scale: mousePos.x || mousePos.y ? 1.02 : 1, // reduce scale slightly
+          scale: mousePos.x || mousePos.y ? 1.02 : 1,
         }}
-        transition={{ type: "spring", stiffness: 80, damping: 15 }} // smoother spring
+        transition={{ type: "spring", stiffness: 80, damping: 15 }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       />

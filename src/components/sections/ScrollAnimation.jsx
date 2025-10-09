@@ -31,7 +31,7 @@ const ScrollAnimationSection = () => {
   return (
     <section ref={sectionRef} className="h-[300vh] text-black">
       {/* Sticky pinned content */}
-      <div className="sticky top-0 h-screen flex flex-col md:flex-row items-center justify-between px-4 md:px-8">
+      <div className="sticky top-0 h-screen flex flex-col md:flex-row items-center justify-between">
         {/* Left Side */}
         <div className="flex-1 flex flex-col justify-center items-start space-y-6">
           <h2 className="text-white text-4xl md:text-5xl font-bold">

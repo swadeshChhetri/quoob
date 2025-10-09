@@ -134,19 +134,29 @@ const PricingTableSection = () => {
             </div>
           ))}
 
-          {/* CTA Row
+          {/* CTA Row */}
           <div className="grid grid-cols-4 bg-gray-900 border-t border-gray-700">
             <div className="p-6 border-r border-gray-700"></div>
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`p-6 ${
+                className={`p-6 flex justify-center ${
                   index < plans.length - 1 ? "border-r border-gray-700" : ""
                 } ${plan.popular ? "bg-lime-400/10" : ""}`}
               >
+                {/* Enhanced Button */}
+                <button
+                  className={`px-6 py-3 font-semibold rounded-xl text-black shadow-lg transition-transform transform hover:scale-105 ${
+                    plan.popular
+                      ? "bg-lime-400 hover:bg-lime-600 hover:from-lime-500 hover:to-lime-700"
+                      : "bg-lime-600 hover:bg-lime-700"
+                  }`}
+                >
+                  Choose Plan
+                </button>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

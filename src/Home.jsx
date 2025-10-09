@@ -27,9 +27,9 @@ const Home = () => {
         <HeroSection />
         <DemoImage />
         <AgenticSection />
-        <MiddleVideo />
         <AgentPlatformSection />
         <MultimodalSection />
+        <MiddleVideo />
         <UseCases />
         <DataSource />
         <ScrollAnimationSection />

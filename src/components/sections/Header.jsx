@@ -52,7 +52,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-1/2 transform -translate-x-1/2 w-full max-w-7xl z-50 transition-all duration-300 ${
+      className={`fixed left-1/2 transform -translate-x-1/2 w-full z-50 transition-all duration-300 ${
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-32 opacity-0"
       } ${
         isScrolled
@@ -86,7 +86,7 @@ export default function Header() {
       </nav>
 
       {/* Right Button */}
-      <button className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105">
+      <button className="bg-lime-300 hover:bg-lime-400 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105">
         Book a Demo
       </button>
     </header>

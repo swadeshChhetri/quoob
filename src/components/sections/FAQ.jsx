@@ -66,7 +66,7 @@ export default function FAQSection() {
 
   return (
     <section id="faq" className="bg-black text-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
