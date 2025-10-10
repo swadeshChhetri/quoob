@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import Button from "../common/Button";
+
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);

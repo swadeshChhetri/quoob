@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <>
       {/* <section> */}
-      <section className="font-[var(--font-hanken)] space-y-40 mx-10">
+      <section className="font-[var(--font-hanken)] space-y-40 mx-auto max-w-7xl px-2">
         <Header />
         <DemoVideoSection />
         <HeroSection />

@@ -1,26 +1,13 @@
+import React from "react";
 
-const colorClasses = {
-  red: "bg-red-500 hover:bg-red-600 text-white",
-  blue: "bg-blue-500 hover:bg-blue-600 text-white",
-  green: "bg-green-500 hover:bg-green-600 text-white",
-};
-
-const sizeClasses = {
-  small: "px-2 py-1 text-sm",
-  medium: "px-4 py-2 text-base",
-  large: "px-6 py-3 text-lg",
-};
-
-export default function Button({ color = "blue", size = "medium", children, onClick }) {
-  const colorClass = colorClasses[color] || colorClasses.blue;
-  const sizeClass = sizeClasses[size] || sizeClasses.medium;
-
+export default function Button({ label, icon: Icon, onClick }) {
   return (
     <button
-      className={`${colorClass} ${sizeClass} rounded transition-colors duration-200`}
       onClick={onClick}
+      className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-8 py-3 rounded-full flex items-center gap-2 transition"
     >
-      {children}
+      {Icon && <Icon size={20} />}
+      {label}
     </button>
   );
 }
