@@ -48,6 +48,7 @@ export default function HeroSection() {
               initial="hidden"
               animate="visible"
               exit="exit"
+              className="max-w-xl"
             >
               <h1 className="text-5xl md:text-5xl font-bold text-white leading-tight">
                 {heading}
