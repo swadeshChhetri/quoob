@@ -9,9 +9,9 @@ import Footer from "../components/sections/Footer";
 
 export default function Services() {
   return (
-    <section className="font-[var(--font-hanken)] space-y-40 mx-auto max-w-7xl px-2">
+    <section className="font-[var(--font-hanken)] space-y-40 mx-auto max-w-7xl px-2 ">
       <Header />
-      <div className="pt-18">
+      <div className="pt-18 p-6">
       <AgenticSection />
       <MultimodalSection />
       <UseCases />

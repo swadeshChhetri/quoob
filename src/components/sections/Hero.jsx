@@ -37,7 +37,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden p-6">
       <div className="flex flex-col md:flex-row items-center justify-between relative rounded-xl bg-black/80">
         {/* Left Content */}
         <div className=" flex-1 text-left space-y-6 flex flex-col justify-center">

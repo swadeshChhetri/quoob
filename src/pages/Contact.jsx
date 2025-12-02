@@ -8,10 +8,11 @@ export default function Contact() {
   return (
     <section className="font-[var(--font-hanken)] space-y-40 mx-auto max-w-7xl px-2">
       <Header />
-      <div className="pt-20">
+      <div className="pt-20 p-6">
       <ContactForm />
       <Footer />
       </div>
     </section>
   );
 }
+
