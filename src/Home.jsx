@@ -26,19 +26,6 @@ const Home = () => {
         <DemoVideoSection />
         <HeroSection />
         <DemoImage />
-        <AgenticSection />
-        <AgentPlatformSection />
-        <MultimodalSection />
-        <MiddleVideo />
-        <UseCases />
-        <DataSource />
-        <ScrollAnimationSection />
-        <StatsSection />
-        <Overview />
-        <PricingTableSection />
-        <FAQSection />
-        <ContactForm />
-        <Footer />
       </section>
     </>
   );
