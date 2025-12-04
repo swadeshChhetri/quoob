@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import DemoVideoSection from "./DemoVideo";
 
 const dynamicContent = [
   {
@@ -37,7 +38,22 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden space-y-20">
+      <section className="w-full flex flex-col items-center text-center">
+        <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
+          Better Automation. <br /> Built on Qyoob.
+        </h1>
+
+        <p className="text-gray-300 text-lg mt-4 max-w-3xl mx-auto">
+          Qyoob enables enterprises to automate complex, multi-step workflows
+          with agentic AI. By combining orchestration, secure data access, and
+          enterprise tool integrations, Qyoob delivers faster decisions, smarter
+          operations, and more natural interactions across every team.
+        </p>
+      </section>
+
+      <DemoVideoSection />
+
       <div className="flex flex-col md:flex-row items-center justify-between relative rounded-xl bg-black/80">
         {/* Left Content */}
         <div className=" flex-1 text-left space-y-6 flex flex-col justify-center">
@@ -63,18 +79,16 @@ export default function HeroSection() {
 
         {/* Right Image */}
         <div className="flex-1 mt-10 md:mt-0 flex justify-center items-center">
-       
-            <img
-              key={currentIndex}
-              src="/image/createagent.png"
-              alt="AI Agent Builder Preview"
-              className="rounded-lg shadow-lg border border-[#1b1b1b] w-full max-w-[700px]"
-              variants={variants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-            />
-   
+          <img
+            key={currentIndex}
+            src="/image/createagent.png"
+            alt="AI Agent Builder Preview"
+            className="rounded-lg shadow-lg border border-[#1b1b1b] w-full max-w-[700px]"
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          />
         </div>
       </div>
     </section>

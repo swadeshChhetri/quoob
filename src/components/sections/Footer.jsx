@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center py-4 border-t border-t-gray-200   shadow-[0_0_15px_rgba(128,255,0,0.1)]">
+    <footer className="flex justify-between items-center px-4 py-4 border-t border-t-gray-200   shadow-[0_0_15px_rgba(128,255,0,0.1)]">
       {/* Left Logo Section */}
       {/* Left Logo Section */}
       <div className="flex items-center space-x-2 ">
