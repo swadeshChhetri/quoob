@@ -3,16 +3,12 @@ import React from "react";
 import Header from "../components/sections/Header";
 import ContactForm from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
+import MainLayout from "./../components/layout/MainLayout";
 
 export default function Contact() {
   return (
-    <section className="font-[var(--font-hanken)] space-y-40 mx-auto max-w-7xl px-2">
-      <Header />
-      <div className="pt-20 p-6">
+    <MainLayout>
       <ContactForm />
-      <Footer />
-      </div>
-    </section>
+    </MainLayout>
   );
 }
-

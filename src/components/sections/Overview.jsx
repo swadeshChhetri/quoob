@@ -23,9 +23,9 @@ const overviewData = [
 
 const Overview = () => {
   return (
-    <section id="overview" className=" text-white relative overflow-hidden p-6">
+    <section id="overview" className=" text-white relative overflow-hidden">
       {/* Heading */}
-      <h2 className="text-5xl font-semibold mb-6 text-left text-white pt-20">
+      <h2 className="text-5xl font-semibold mb-6 text-left text-white">
         About
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
         Us

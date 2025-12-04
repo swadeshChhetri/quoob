@@ -3,7 +3,10 @@ import { CirclePlay } from "lucide-react";
 
 export default function MiddleVideo() {
   return (
-    <section id="home" className="relative w-full flex justify-center items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative w-full flex justify-center items-center overflow-hidden"
+    >
       {/* Video container with rounded corners */}
       <div className="w-full overflow-hidden rounded-3xl relative">
         <video
@@ -16,7 +19,10 @@ export default function MiddleVideo() {
           loop
           playsInline
         >
-          <source src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/audio.mp4" type="video/mp4" />
+          <source
+            src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/audio.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
     </section>

@@ -3,7 +3,10 @@ import { CirclePlay } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="pt-22 relative w-full flex justify-center items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative w-full flex justify-center items-center overflow-hidden"
+    >
       {/* Video container with rounded corners */}
       <div className="w-full overflow-hidden rounded-3xl relative">
         <video
@@ -13,7 +16,10 @@ export default function HeroSection() {
           loop
           playsInline
         >
-          <source src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/Final Video.mp4" type="video/mp4" />
+          <source
+            src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/Final Video.mp4"
+            type="video/mp4"
+          />
         </video>
 
         {/* Watch Demo button over video */}

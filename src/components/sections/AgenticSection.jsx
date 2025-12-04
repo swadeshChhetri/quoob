@@ -5,7 +5,7 @@ const AgenticSection = () => {
   return (
     <section
       id="about"
-      className="bg-black text-white flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      className="bg-black text-white flex flex-col-reverse md:flex-row items-center justify-between"
     >
       {/* Left Content */}
       <div className="max-w-xl space-y-6">
