@@ -26,9 +26,9 @@ export default function Header() {
     setIsScrolled(currentScrollY > 50);
 
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      setIsVisible(false);   // Hide
+      setIsVisible(false); // Hide
     } else if (currentScrollY < lastScrollY) {
-      setIsVisible(true);    // Show
+      setIsVisible(true); // Show
     }
 
     setLastScrollY(currentScrollY);
@@ -82,15 +82,19 @@ export default function Header() {
 
       {/* CTA */}
       <div className="flex gap-2">
-      <button className="bg-lime-300 hover:bg-lime-400 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105" onClick={() => navigate("/contact")}>
-        Book a Demo
-      </button>
-      <button className="bg-lime-300 hover:bg-lime-400 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105" onClick={() => navigate("/login")}>
-        Login
-      </button>
+        <button
+          className="bg-lime-300 hover:bg-lime-400 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105"
+          onClick={() => navigate("/contact")}
+        >
+          Book a Demo
+        </button>
+        <button
+          className="bg-lime-300 hover:bg-lime-400 text-black font-medium px-6 py-2 rounded-full flex items-center gap-2 transition hover:scale-105"
+          onClick={() => (window.location.href = "https://app.qyoob.ai")}
+        >
+          Login
+        </button>
       </div>
     </header>
   );
 }
-
-
