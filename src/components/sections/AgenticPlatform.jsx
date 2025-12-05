@@ -49,7 +49,7 @@ const SplitSection = () => {
             <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-gray-800 h-[300px] md:h-[400px]">
               <video
                 className="w-full h-full object-cover"
-                // autoPlay
+                autoPlay
                 loop
                 muted
                 playsInline

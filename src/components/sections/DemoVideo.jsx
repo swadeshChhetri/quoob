@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="w-full overflow-hidden rounded-3xl relative">
         <video
           className="w-full h-135 object-cover"
-          // autoPlay
+          autoPlay
           muted
           loop
           playsInline
