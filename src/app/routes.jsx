@@ -9,6 +9,7 @@ import FAQ from "../pages/FAQ";
 import Contact from "../pages/Contact";
 import Products from "../pages/Products";
 import Login from "../components/auth/Login";
+import RecoverPassword from "../components/auth/RecoverPassword";
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       {/* <Route path="/faq" element={<FAQ />} /> */}
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/forgot-password" element={<RecoverPassword />} />
 
       {/* Optional: 404 page if you want */}
       {/* <Route path="*" element={<NotFound />} /> */}

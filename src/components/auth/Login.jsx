@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -8,6 +10,7 @@ export default function Login() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const [errors, setErrors] = useState({
     email: "",
@@ -195,6 +198,7 @@ export default function Login() {
               <button
                 type="button"
                 className="text-sm font-medium text-lime-300 hover:text-lime-200"
+                onClick={() => navigate("/forgot-password")}
               >
                 Forgot Password?
               </button>
