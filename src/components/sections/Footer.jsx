@@ -27,7 +27,7 @@ export default function Footer() {
 
       {/* MAIN FOOTER GRID */}
       <div className="border-t border-gray-800 pt-16">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* LOGO */}
           <div className="flex items-start">
             <div className="flex items-center space-x-2 ">
@@ -61,13 +61,10 @@ export default function Footer() {
               <li>
                 <Link to="/">Request a Demo</Link>
               </li>
-              <li>
-                <Link to="https://app.qyoob.ai/login">Try for Free</Link>
-              </li>
             </ul>
           </div>
 
-          {/* SOLUTIONS */}
+          {/* SOLUTIONS
           <div>
             <h4 className="font-semibold mb-4 text-lg">Solutions</h4>
             <ul className="space-y-2">
@@ -76,10 +73,10 @@ export default function Footer() {
               <li>Marketing Agent</li>
               <li>Data Analysis Agent</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* RESOURCES */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4 text-lg">Resources</h4>
             <ul className="space-y-2">
               <li>Case Studies</li>
@@ -88,7 +85,7 @@ export default function Footer() {
               <li>Document Stores</li>
               <li>AI Supervision</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* COMPANY */}
           <div>
