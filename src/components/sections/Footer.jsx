@@ -1,5 +1,6 @@
 import React from "react";
 import { Linkedin, Twitter, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -42,13 +43,27 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Product</h4>
             <ul className="space-y-2">
-              <li>Qyoob Agent</li>
-              <li>AI Agent Builder</li>
-              <li>Multimodal Interfaces</li>
-              <li>Intelligent Automation</li>
-              <li>Pricing Plans</li>
-              <li>Request a Demo</li>
-              <li>Try for Free</li>
+              <li>
+                <Link to="/">Qyoob Agent</Link>
+              </li>
+              <li>
+                <Link to="/">AI Agent Builder</Link>
+              </li>
+              <li>
+                <Link to="/">Multimodal Interfaces</Link>
+              </li>
+              <li>
+                <Link to="/">Intelligent Automation</Link>
+              </li>
+              <li>
+              <a href="/plans">Pricing Plans</a>
+              </li>
+              <li>
+                <Link to="/">Request a Demo</Link>
+              </li>
+              <li>
+                <Link to="https://app.qyoob.ai/login">Try for Free</Link>
+              </li>
             </ul>
           </div>
 
@@ -79,8 +94,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Company</h4>
             <ul className="space-y-2">
-              <li>About</li>
-              <li>Contact</li>
+              <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
+              <a href="/contact">Contact</a>
+              </li>
               <li>Careers</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
@@ -120,7 +139,10 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="mt-16 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm">
-        <p className="mb-4 md:mb-0"> © {new Date().getFullYear()} Qyoob. All rights reserved.</p>
+        <p className="mb-4 md:mb-0">
+          {" "}
+          © {new Date().getFullYear()} Qyoob. All rights reserved.
+        </p>
 
         <div className="flex items-center gap-6 mb-4 md:mb-0">
           <a
