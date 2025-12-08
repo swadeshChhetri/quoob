@@ -38,58 +38,64 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Product */}
+          {/* PRODUCT */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Product</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Trust</li>
-              <li>AI Studio</li>
-              <li>Graph RAG</li>
-              <li>Palmyra LLMs</li>
+            <ul className="space-y-2">
               <li>Qyoob Agent</li>
-              <li>Request a demo</li>
-              <li>Try for free</li>
+              <li>AI Agent Builder</li>
+              <li>Multimodal Interfaces</li>
+              <li>Intelligent Automation</li>
+              <li>Pricing Plans</li>
+              <li>Request a Demo</li>
+              <li>Try for Free</li>
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* SOLUTIONS */}
+          <div>
+            <h4 className="font-semibold mb-4 text-lg">Solutions</h4>
+            <ul className="space-y-2">
+              <li>Customer Support Agent</li>
+              <li>Coding Agent</li>
+              <li>Marketing Agent</li>
+              <li>Data Analysis Agent</li>
+            </ul>
+          </div>
+
+          {/* RESOURCES */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Resources</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Guides</li>
-              <li>AI blog</li>
-              <li>AI Agent Library</li>
-              <li>Engineering blog</li>
-              <li>Enterprise AI agents</li>
-              <li>GEO optimization</li>
-              <li>Blog title generator</li>
-              <li>AI product description</li>
+            <ul className="space-y-2">
+              <li>Case Studies</li>
+              <li>Orchestration</li>
+              <li>Tools Management</li>
+              <li>Document Stores</li>
+              <li>AI Supervision</li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* COMPANY */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Company</h4>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2">
               <li>About</li>
+              <li>Contact</li>
               <li>Careers</li>
-              <li>Partners</li>
-              <li>Legal hub</li>
-              <li>Newsroom</li>
-              <li>Contact us</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
             </ul>
           </div>
 
-          {/* Support */}
-          <div>
+          {/* SUPPORT SECTION (BOTTOM ROW) */}
+          {/* <div className="mt-16 border-t border-gray-800 pt-10">
             <h4 className="font-semibold mb-4 text-lg">Support</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Status</li>
-              <li>Help center</li>
-              <li>AI Academy</li>
-              <li>Developer docs</li>
+            <ul className="space-y-2">
+              <li>Help Center</li>
+              <li>API Docs</li>
+              <li>Status Page</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -114,7 +120,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="mt-16 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm">
-        <p className="mb-4 md:mb-0">© 2025 Qyoob</p>
+        <p className="mb-4 md:mb-0"> © {new Date().getFullYear()} Qyoob. All rights reserved.</p>
 
         <div className="flex items-center gap-6 mb-4 md:mb-0">
           <a
@@ -125,7 +131,7 @@ export default function Footer() {
             <Linkedin size={20} className="hover:text-white cursor-pointer" />
           </a>
 
-          <a
+          {/* <a
             href="https://twitter.com/your-handle"
             target="_blank"
             rel="noopener noreferrer"
@@ -139,7 +145,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <Github size={20} className="hover:text-white cursor-pointer" />
-          </a>
+          </a> */}
         </div>
 
         <div className="flex items-center gap-4">
