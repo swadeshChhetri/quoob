@@ -18,10 +18,6 @@ export default function Footer() {
           <button className="px-8 py-3 rounded-full border border-lime-400 text-white hover:bg-lime-400 hover:text-black transition">
             Request a demo
           </button>
-
-          <button className="px-8 py-3 rounded-full bg-lime-400 hover:bg-lime-500 text-black transition">
-            Try for free
-          </button>
         </div>
       </div>
 
@@ -29,14 +25,22 @@ export default function Footer() {
       <div className="border-t border-gray-800 pt-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* LOGO */}
-          <div className="flex items-start">
-            <div className="flex items-center space-x-2 ">
-              <img
-                src="/image/logo.svg" // <-- replace with your logo path
-                alt="Qyoob Logo"
-                className="w-30"
-              />
+          <div className="flex flex-col items-start space-y-4">
+            {/* Logo */}
+            <div className="flex items-center space-x-2">
+              <img src="/image/logo.svg" alt="Qyoob Logo" className="w-30" />
             </div>
+
+            {/* About Text */}
+            <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
+              Qyoob delivers enterprise-grade agentic automation designed for
+              real operational impact. We orchestrate AI-driven workflows across
+              chat, voice, APIs, and enterprise systems. Our platform connects
+              securely to your data sources to enable reliable automation. With
+              modular agents and seamless integrations, teams work faster and
+              more intelligently. Built for scale, governance, and real-world
+              enterprise environments.
+            </p>
           </div>
 
           {/* PRODUCT */}
@@ -56,7 +60,7 @@ export default function Footer() {
                 <Link to="/">Intelligent Automation</Link>
               </li>
               <li>
-              <a href="/plans">Pricing Plans</a>
+                <a href="/plans">Pricing Plans</a>
               </li>
               <li>
                 <Link to="/">Request a Demo</Link>
@@ -95,7 +99,7 @@ export default function Footer() {
                 <a href="/about">About</a>
               </li>
               <li>
-              <a href="/contact">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>Careers</li>
               <li>Privacy Policy</li>
