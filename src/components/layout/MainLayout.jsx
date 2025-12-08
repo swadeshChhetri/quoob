@@ -2,13 +2,16 @@
 import Footer from "../sections/Footer";
 import Header from "../sections/Header";
 
-
-
 const MainLayout = ({ children }) => {
   return (
-    <div className="font-sans text-gray-800 space-y-40">
+    <div className="font-sans text-gray-800 space-y-10">
       <Header />
-      <main className="max-w-7xl mx-auto space-y-40 pt-26">{children}</main>
+      <main className="pt-10">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          {children}
+        </div>
+      </main>
+
       <Footer />
     </div>
   );

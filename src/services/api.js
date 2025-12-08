@@ -20,8 +20,6 @@ API.interceptors.request.use((config) => {
 export const NewsAPI = {
   fetchLatest: () => API.get("/news"),
   fetchHighlights: () => API.get("/news/getHighlightNewsWithCategory"),
-  // fetchByCategory: (slug) => API.get(`/admin/category/${slug}`),
-  // fetchCategoryHighlights: () => API.get("/category-highlights"),
   search: (query) => API.get(`/search?q=${query}`),
   fetchById: async (id) => (await API.get(`/news/${id}`)).data,
   postComment: async (newsId, commentText) =>

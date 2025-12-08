@@ -1,6 +1,8 @@
+
+
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import DemoVideoSection from "./DemoVideo";
+import HeroSectionVideo from "./DemoVideo";
 
 const dynamicContent = [
   {
@@ -38,57 +40,72 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden space-y-20">
-      <section className="w-full flex flex-col items-center text-center">
-        <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
+    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
+      {/* -------------------- TOP TEXT BLOCK -------------------- */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center space-y-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-5xl">
           Better Automation. <br /> Built on Qyoob.
         </h1>
 
-        <p className="text-gray-300 text-lg mt-4 max-w-3xl mx-auto">
+        <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
           Qyoob enables enterprises to automate complex, multi-step workflows
           with agentic AI. By combining orchestration, secure data access, and
           enterprise tool integrations, Qyoob delivers faster decisions, smarter
           operations, and more natural interactions across every team.
         </p>
-      </section>
+      </div>
 
-      <DemoVideoSection />
+      {/* -------------------- DEMO VIDEO SECTION -------------------- */}
+      <div className="mt-14 sm:mt-20">
+        <HeroSectionVideo />
+      </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between relative rounded-xl bg-black/80">
-        {/* Left Content */}
-        <div className=" flex-1 text-left space-y-6 flex flex-col justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              variants={variants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="max-w-xl"
-            >
-              <h1 className="text-5xl md:text-5xl font-bold text-white leading-tight">
-                {heading}
-              </h1>
-              <p className="text-gray-300 text-lg mt-4">{paragraph}</p>
-              <button className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md mt-4">
-                {button}
-              </button>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+      {/* -------------------- DYNAMIC CONTENT SECTION -------------------- */}
+      <div className="container mx-auto mt-20">
+        <div
+          className="
+      flex flex-col md:flex-row items-center justify-between
+      bg-black/80 border border-[#1b1b1b] rounded-xl 
+      px-4 sm:px-6 lg:px-10 py-10 gap-12 md:gap-16
+    "
+        >
+          {/* LEFT TEXT AREA (Only this animates) */}
+          <div className="flex-1 text-left min-h-[220px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="max-w-xl space-y-4"
+              >
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+                  {heading}
+                </h1>
 
-        {/* Right Image */}
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center items-center">
-          <img
-            key={currentIndex}
-            src="/image/createagent.png"
-            alt="AI Agent Builder Preview"
-            className="rounded-lg shadow-lg border border-[#1b1b1b] w-full max-w-[700px]"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-          />
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                  {paragraph}
+                </p>
+
+                <button className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md">
+                  {button}
+                </button>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* RIGHT IMAGE AREA (Static — no animation) */}
+          <div className="flex-1 flex justify-center">
+            <img
+              src={image}
+              alt="AI Agent Builder Preview"
+              className="
+          w-full max-w-[360px] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[700px]
+          rounded-lg shadow-lg border border-[#1b1b1b]
+        "
+            />
+          </div>
         </div>
       </div>
     </section>

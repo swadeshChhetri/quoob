@@ -23,53 +23,54 @@ const overviewData = [
 
 const Overview = () => {
   return (
-    <section id="overview" className=" text-white relative overflow-hidden">
-      {/* Heading */}
-      <h2 className="text-5xl font-semibold mb-6 text-left text-white">
-        About
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-        Us
-              </span>
-      </h2>
+    <section
+      id="overview"
+      className="text-white relative overflow-hidden py-16 sm:py-20 lg:py-28"
+    >
+      <div className="container mx-auto">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-left">
+          About{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
+            Us
+          </span>
+        </h2>
 
-      {/* Paragraph */}
-      <p className="text-gray-400 text-lg max-w-3xl mb-14">
-        Aliquet tellus imperdiet morbi tincidunt gravida nulla. Vitae cum vel
-        vulputate at mauri.
-      </p>
+        {/* Paragraph */}
+        <p className="text-gray-400 text-base sm:text-lg max-w-3xl mb-10 sm:mb-14 leading-relaxed">
+          Aliquet tellus imperdiet morbi tincidunt gravida nulla. Vitae cum vel
+          vulputate at mauri.
+        </p>
 
-      {/* Cards */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {overviewData.map((item, index) => (
-          <div
-            key={index}
-            className="
-              group
-             
-              rounded-2xl border border-lime-400/20
-              p-8
+        {/* Cards Grid */}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {overviewData.map((item, index) => (
+            <div
+              key={index}
+              className="
+              group rounded-2xl border border-lime-400/20
+              p-6 sm:p-8
               shadow-[0_0_40px_-15px_rgba(163,255,102,0.2)]
               transition-all duration-500 relative
               hover:shadow-[0_0_50px_-10px_rgba(163,255,102,0.4)]
-              hover:border-lime-400/40
-              hover:scale-[1.0]
-              hover:-translate-y-2
+              hover:border-lime-400/40 hover:-translate-y-2
             "
-          >
-            {/* Number badge */}
-            <div className="bg-lime-400 text-black font-bold text-lg w-10 h-10 flex items-center justify-center rounded-md shadow-md transition-transform duration-500 group-hover:scale-110">
-              {item.number}
+            >
+              {/* Number Badge */}
+              <div className="bg-lime-400 text-black font-bold text-lg w-10 h-10 flex items-center justify-center rounded-md shadow-md transition-transform duration-500 group-hover:scale-110">
+                {item.number}
+              </div>
+
+              <h3 className="text-xl sm:text-2xl font-semibold mt-8 mb-4 text-lime-300 transition-colors duration-500">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+                {item.description}
+              </p>
             </div>
-
-            <h3 className="text-2xl font-semibold mt-8 mb-4 text-lime-300 transition-colors duration-500">
-              {item.title}
-            </h3>
-
-            <p className="text-gray-300 leading-relaxed">
-              {item.description}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

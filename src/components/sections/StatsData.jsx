@@ -67,7 +67,7 @@ const CountUp = ({ value, suffix = "", duration = 2 }) => {
 
 const StatsSection = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-black">
       <div className="">
         <div className="text-center mb-16">
           <motion.h2 

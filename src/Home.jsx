@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section className="font-[var(--font-hanken)] mx-auto max-w-7xl px-2">
       <Header />
-      <DemoVideoSection />
+      {/* <DemoVideoSection /> */}
       <HeroSection />
       <DemoImage />
     </section>
