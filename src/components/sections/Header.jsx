@@ -62,7 +62,9 @@ export default function Header() {
       <header className={headerClasses}>
         {/* Logo */}
         <div className="flex items-center">
-          <img src="/image/logo.svg" alt="Logo" className="w-32" />
+          <a href="/">
+            <img src="/image/logo.svg" alt="Logo" className="w-32" />
+          </a>
         </div>
 
         {/* Desktop Nav */}

@@ -34,7 +34,7 @@ export default function HeroSectionVideo() {
               transition shadow-lg hover:shadow-lime-400/30"
             >
               <CirclePlay size={20} />
-              Start free trial
+              Request a demo
             </button>
           </div>
         </div>

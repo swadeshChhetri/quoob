@@ -28,7 +28,9 @@ export default function Footer() {
           <div className="flex flex-col items-start space-y-4">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <img src="/image/logo.svg" alt="Qyoob Logo" className="w-30" />
+              <a href="/">
+                <img src="/image/logo.svg" alt="Qyoob Logo" className="w-30" />
+              </a>
             </div>
 
             {/* About Text */}

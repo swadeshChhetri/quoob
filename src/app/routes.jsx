@@ -25,7 +25,7 @@ export default function AppRoutes() {
       <Route path="/forgot-password" element={<RecoverPassword />} />
 
       {/* Optional: 404 page if you want */}
-      {/* <Route path="*" element={<NotFound />} /> */}
+      {/* <Route path="*" element={<Home />} /> */}
     </Routes>
   );
 }
