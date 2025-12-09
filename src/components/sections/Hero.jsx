@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import HeroSectionVideo from "./DemoVideo";
+import { Link } from "react-router-dom";
 
 const dynamicContent = [
   {
@@ -88,9 +89,9 @@ export default function HeroSection() {
                   {paragraph}
                 </p>
 
-                <button className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md">
+                <Link to="/contact" className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md">
                   {button}
-                </button>
+                </Link>
               </motion.div>
             </AnimatePresence>
           </div>
