@@ -64,10 +64,11 @@ export default function SectionSupervision() {
           </div>
 
           {/* RIGHT PANEL */}
-          <div className="w-full h-[500px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center">
-            <p className="text-gray-400 text-sm">
-              Dashboard / Chart Placeholder
-            </p>
+          <div className="w-full h-[350px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
+            <img
+              src="/image/ai_supervision.png"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>

@@ -12,11 +12,10 @@ export default function SectionAgents() {
 
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
           Agents for the business,
-          <br /> governed by 
+          <br /> governed by
           <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-          IT.
+            IT.
           </span>
-           
         </h1>
       </div>
 
@@ -82,8 +81,11 @@ export default function SectionAgents() {
           </div>
 
           {/* Right Column — Placeholder for Image */}
-          <div className="w-full h-80 bg-gray-800/40 rounded-xl flex items-center justify-center border border-gray-700">
-            <p className="text-gray-400 text-sm">Image placeholder</p>
+          <div className="w-full h-[330px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
+            <img
+              src="/image/ai_work.jpg"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Footer() {
 
       {/* MAIN FOOTER GRID */}
       <div className="border-t border-gray-800 pt-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-40">
           {/* LOGO */}
           <div className="flex flex-col items-start space-y-4">
             {/* Logo */}
@@ -32,15 +32,13 @@ export default function Footer() {
             </div>
 
             {/* About Text */}
-            <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              Qyoob delivers enterprise-grade agentic automation designed for
-              real operational impact. We orchestrate AI-driven workflows across
-              chat, voice, APIs, and enterprise systems. Our platform connects
-              securely to your data sources to enable reliable automation. With
-              modular agents and seamless integrations, teams work faster and
-              more intelligently. Built for scale, governance, and real-world
-              enterprise environments.
-            </p>
+            <div className="text-sm text-gray-400 leading-relaxed space-y-3">
+              <p>
+                Qyoob delivers secure, enterprise-ready AI automation by
+                orchestrating workflows across chat, voice, APIs, and internal
+                systems—empowering teams to work faster and smarter.
+              </p>
+            </div>
           </div>
 
           {/* PRODUCT */}
@@ -68,29 +66,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* SOLUTIONS
-          <div>
-            <h4 className="font-semibold mb-4 text-lg">Solutions</h4>
-            <ul className="space-y-2">
-              <li>Customer Support Agent</li>
-              <li>Coding Agent</li>
-              <li>Marketing Agent</li>
-              <li>Data Analysis Agent</li>
-            </ul>
-          </div> */}
-
-          {/* RESOURCES */}
-          {/* <div>
-            <h4 className="font-semibold mb-4 text-lg">Resources</h4>
-            <ul className="space-y-2">
-              <li>Case Studies</li>
-              <li>Orchestration</li>
-              <li>Tools Management</li>
-              <li>Document Stores</li>
-              <li>AI Supervision</li>
-            </ul>
-          </div> */}
-
           {/* COMPANY */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Company</h4>
@@ -106,16 +81,6 @@ export default function Footer() {
               <li>Terms of Service</li>
             </ul>
           </div>
-
-          {/* SUPPORT SECTION (BOTTOM ROW) */}
-          {/* <div className="mt-16 border-t border-gray-800 pt-10">
-            <h4 className="font-semibold mb-4 text-lg">Support</h4>
-            <ul className="space-y-2">
-              <li>Help Center</li>
-              <li>API Docs</li>
-              <li>Status Page</li>
-            </ul>
-          </div> */}
         </div>
       </div>
 

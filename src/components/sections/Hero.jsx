@@ -44,7 +44,7 @@ export default function HeroSection() {
       {/* -------------------- TOP TEXT BLOCK -------------------- */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center space-y-6">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-5xl">
-          Better Automation. <br /> Built on Qyoob.
+          Agentic AI for the Modern Enterprise
         </h1>
 
         <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
