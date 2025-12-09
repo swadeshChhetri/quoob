@@ -44,7 +44,7 @@ const SplitSection = () => {
               <video
                 className="w-full h-full object-cover"
                 loop
-                autoPlay
+                // autoPlay
                 muted
                 playsInline
               >

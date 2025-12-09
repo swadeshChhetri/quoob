@@ -15,9 +15,12 @@ export default function Footer() {
         </h2>
 
         <div className="flex items-center justify-center gap-6 font-semibold">
-          <button className="px-8 py-3 rounded-full border border-lime-400 text-white hover:bg-lime-400 hover:text-black transition">
+          <Link
+            to="/contact"
+            className="px-8 py-3 rounded-full border border-lime-400 text-white hover:bg-lime-400 hover:text-black transition"
+          >
             Request a demo
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -46,7 +49,7 @@ export default function Footer() {
           {/* PRODUCT */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Product</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 opacity-90">
               <li>
                 <Link to="/">Qyoob Agent</Link>
               </li>
@@ -63,7 +66,7 @@ export default function Footer() {
                 <a href="/plans">Pricing Plans</a>
               </li>
               <li>
-                <Link to="/">Request a Demo</Link>
+                <Link to="/contact">Request a Demo</Link>
               </li>
             </ul>
           </div>
@@ -71,14 +74,13 @@ export default function Footer() {
           {/* COMPANY */}
           <div>
             <h4 className="font-semibold mb-4 text-lg">Company</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 opacity-90">
               <li>
                 <a href="/about">About</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
               </li>
-              <li>Careers</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
             </ul>

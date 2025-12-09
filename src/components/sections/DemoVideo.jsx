@@ -1,7 +1,9 @@
 import React from "react";
 import { CirclePlay } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function HeroSectionVideo() {
+  const navigate = useNavigate();
   return (
     <section id="home" className="relative py-10 sm:py-16 lg:py-20">
       <div className="container mx-auto ">
@@ -12,7 +14,7 @@ export default function HeroSectionVideo() {
             <video
               className="w-full h-full object-cover"
               muted
-              autoPlay
+              // autoPlay
               loop
               playsInline
             >
@@ -25,17 +27,19 @@ export default function HeroSectionVideo() {
 
           {/* CTA Button */}
           <div className="absolute inset-0 flex items-end justify-center pb-6 sm:pb-10 pointer-events-none">
-            <button
+            <Link
+              to="/contact" // <-- your internal route
               className="
-              pointer-events-auto flex items-center gap-2
-              bg-lime-400 hover:bg-lime-500 
-              text-black font-semibold
-              px-6 sm:px-8 py-3 rounded-full 
-              transition shadow-lg hover:shadow-lime-400/30"
+      pointer-events-auto flex items-center gap-2
+      bg-lime-400 hover:bg-lime-500 
+      text-black font-semibold
+      px-6 sm:px-8 py-3 rounded-full 
+      transition shadow-lg hover:shadow-lime-400/30
+    "
             >
               <CirclePlay size={20} />
               Request a demo
-            </button>
+            </Link>
           </div>
         </div>
       </div>

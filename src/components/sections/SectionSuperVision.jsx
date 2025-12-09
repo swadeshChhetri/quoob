@@ -64,7 +64,7 @@ export default function SectionSupervision() {
           </div>
 
           {/* RIGHT PANEL */}
-          <div className="w-full h-[350px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
+          <div className="w-full h-[330px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
             <img
               src="/image/ai_supervision.png"
               className="w-full h-full object-contain"
