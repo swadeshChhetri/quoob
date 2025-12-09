@@ -137,9 +137,6 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="cursor-pointer hover:text-white">
-            YOUR PRIVACY CHOICES
-          </span>
           <span>|</span>
           <span className="cursor-pointer hover:text-white">TERMS</span>
           <span>|</span>
