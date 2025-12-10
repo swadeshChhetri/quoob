@@ -81,7 +81,7 @@ export default function SectionAgents() {
           </div>
 
           {/* Right Column — Placeholder for Image */}
-          <div className="w-full h-[330px] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
+          <div className="w-full aspect-[16/10] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
             <img
               src="/image/ai_work.jpg"
               className="w-full h-full object-contain"
