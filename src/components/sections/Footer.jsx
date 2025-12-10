@@ -48,25 +48,19 @@ export default function Footer() {
 
           {/* PRODUCT */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg">Product</h4>
+            <h4 className="font-semibold mb-4 text-lg">Important Links</h4>
             <ul className="space-y-2 opacity-90">
               <li>
-                <Link to="/">Qyoob Agent</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/">AI Agent Builder</Link>
+                <Link to="/products">Product</Link>
               </li>
               <li>
-                <Link to="/">Multimodal Interfaces</Link>
+                <Link to="/plans">Pricing</Link>
               </li>
               <li>
-                <Link to="/">Intelligent Automation</Link>
-              </li>
-              <li>
-                <a href="/plans">Pricing Plans</a>
-              </li>
-              <li>
-                <Link to="/contact">Request a Demo</Link>
+                <Link to="/contact">Request a demo</Link>
               </li>
             </ul>
           </div>
@@ -82,7 +76,7 @@ export default function Footer() {
                 <a href="/contact">Contact</a>
               </li>
               <li>Privacy Policy</li>
-              <li>Terms of Service</li>
+              <li>Terms and conditions</li>
             </ul>
           </div>
         </div>
