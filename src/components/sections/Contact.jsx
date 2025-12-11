@@ -7,19 +7,19 @@ export default function ContactForm() {
     {
       icon: Mail,
       title: "Email Us",
-      description: "hello@qyoob.com",
+      description: "info@qyoob.ai",
       subtext: "We'll reply within 24 hours",
     },
     {
       icon: Phone,
       title: "Call Us",
-      description: "+1 (555) 123-4567",
-      subtext: "Mon to Fri, 9am to 6pm",
+      description: "+16158146524",
+      subtext: "Mon to Fri, 10am to 7pm",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      description: "San Francisco, CA",
+      description: "401 Ronan Way, Spring Hill, Tennessee",
       subtext: "Come say hello at our office",
     },
   ];
@@ -35,9 +35,11 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-black text-white py-16 sm:py-20 lg:py-28">
+    <section
+      id="contact"
+      className="bg-black text-white py-16 sm:py-20 lg:py-28"
+    >
       <div className="container mx-auto">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -46,14 +48,15 @@ export default function ContactForm() {
           className="text-center mb-14 sm:mb-20"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Let’s Build Something{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-              Amazing
+            Get in touch with
+            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
+              us
             </span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Ready to transform your ideas into reality? Reach out and let's create something extraordinary together.
+            Whether you’re exploring AI agents or need help with onboarding, our
+            team is ready to support you.
           </p>
         </motion.div>
 
@@ -66,7 +69,10 @@ export default function ContactForm() {
           className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16"
         >
           {/* Contact info cards */}
-          <motion.div variants={itemVariants} className="space-y-6 sm:space-y-8">
+          <motion.div
+            variants={itemVariants}
+            className="space-y-6 sm:space-y-8"
+          >
             {contactInfo.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -81,9 +87,15 @@ export default function ContactForm() {
                     </div>
 
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
-                      <p className="text-lime-400 font-medium">{item.description}</p>
-                      <p className="text-gray-400 text-sm mt-1">{item.subtext}</p>
+                      <h3 className="font-semibold text-lg mb-1">
+                        {item.title}
+                      </h3>
+                      <p className="text-lime-400 font-medium">
+                        {item.description}
+                      </p>
+                      <p className="text-gray-400 text-sm mt-1">
+                        {item.subtext}
+                      </p>
                     </div>
                   </div>
                 </motion.div>
@@ -91,7 +103,7 @@ export default function ContactForm() {
             })}
 
             {/* Stats card */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               className="p-6 sm:p-8 rounded-2xl border border-lime-400/20 bg-gradient-to-br from-lime-400/5 to-transparent"
             >
@@ -100,18 +112,19 @@ export default function ContactForm() {
                 <p className="text-gray-300 text-sm">Response Time</p>
                 <p className="text-gray-400 text-xs mt-1">Average reply under 6 hours</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Form */}
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <div className="relative rounded-3xl border border-gray-800 bg-gradient-to-br from-gray-900 to-black p-6 sm:p-8 lg:p-12 shadow-xl">
-
               {/* Glow */}
               <div className="absolute -top-3 -right-3 w-16 sm:w-24 h-16 sm:h-24 bg-lime-500/10 rounded-full blur-xl"></div>
               <div className="absolute -bottom-3 -left-3 w-20 sm:w-32 h-20 sm:h-32 bg-green-500/10 rounded-full blur-xl"></div>
 
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">Send us a message</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                Send us a message
+              </h3>
 
               <p className="text-gray-400 mb-8 text-sm sm:text-base">
                 Fill out the form below and we’ll get back to you ASAP.
@@ -121,7 +134,9 @@ export default function ContactForm() {
                 {/* Inputs Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold text-gray-300 mb-2">Full Name *</label>
+                    <label className="block text-sm font-semibold text-gray-300 mb-2">
+                      Full Name *
+                    </label>
                     <input
                       type="text"
                       required
@@ -131,7 +146,9 @@ export default function ContactForm() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-gray-300 mb-2">Email Address *</label>
+                    <label className="block text-sm font-semibold text-gray-300 mb-2">
+                      Email Address *
+                    </label>
                     <input
                       type="email"
                       required
@@ -143,7 +160,9 @@ export default function ContactForm() {
 
                 {/* Subject */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-300 mb-2">Subject *</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Subject *
+                  </label>
                   <input
                     type="text"
                     required
@@ -154,7 +173,9 @@ export default function ContactForm() {
 
                 {/* Message */}
                 <div>
-                  <label className="block text-sm font-semibold text-gray-300 mb-2">Message *</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">
+                    Message *
+                  </label>
                   <textarea
                     rows="5"
                     required

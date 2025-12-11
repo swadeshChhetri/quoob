@@ -9,13 +9,13 @@ const dynamicContent = [
     paragraph:
       "Securely integrated with your tools and systems, working together to automate complex workflows across your organization.",
     button: "Contact Us",
-    image: "/image/mainpage.jpg",
+    image: "/image/mainpage.png",
   },
   {
     heading: "Seamless, human-like collaboration with AI",
     paragraph: "Across text, voice, images, video, and your desktop.",
     button: "Try Demo",
-    image: "/image/mainpage.jpg",
+    image: "/image/mainpage.png",
   },
 ];
 
@@ -47,7 +47,11 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-        Qyoob empowers enterprises to build and deploy advanced AI agents that automate complex, multi-step workflows. With powerful orchestration, secure data connectivity, and seamless integrations across enterprise tools, Qyoob enables faster decisions, smarter operations, and natural, human-like interactions for every team.
+          Qyoob empowers enterprises to build and deploy advanced AI agents that
+          automate complex, multi-step workflows. With powerful orchestration,
+          secure data connectivity, and seamless integrations across enterprise
+          tools, Qyoob enables faster decisions, smarter operations, and
+          natural, human-like interactions for every team.
         </p>
       </div>
 
@@ -56,7 +60,7 @@ export default function HeroSection() {
         <HeroSectionVideo />
       </div>
 
-      {/* -------------------- DYNAMIC CONTENT SECTION -------------------- */}
+      {/* -------------------- DYNAMIC CONTENT SECTION --------------------
       <div className="container mx-auto mt-20">
         <div
           className="
@@ -65,7 +69,7 @@ export default function HeroSection() {
       px-4 sm:px-6 lg:px-10 py-10 gap-12 md:gap-16
     "
         >
-          {/* LEFT TEXT AREA (Only this animates) */}
+          {/* LEFT TEXT AREA (Only this animates) *
           <div className="flex-1 text-left min-h-[220px]">
             <AnimatePresence mode="wait">
               <motion.div
@@ -94,7 +98,7 @@ export default function HeroSection() {
             </AnimatePresence>
           </div>
 
-          {/* RIGHT IMAGE AREA (Static — no animation) */}
+          {/* RIGHT IMAGE AREA (Static — no animation) *
           <div className="flex-1 flex justify-center">
             <img
               src={image}
@@ -103,6 +107,61 @@ export default function HeroSection() {
           w-full max-w-[360px] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[700px]
           rounded-lg shadow-lg border border-[#1b1b1b]
         "
+            />
+          </div>
+        </div>
+      </div> */}
+
+      {/* -------------------- DYNAMIC CONTENT SECTION -------------------- */}
+
+      <div className="container mx-auto mt-20">
+        <div
+          className="
+      w-full bg-black/80 border border-[#1b1b1b] rounded-3xl overflow-hidden
+      flex flex-col md:flex-row
+    "
+        >
+          {/* LEFT SIDE — Dynamic Animated Text */}
+          <div
+            className="
+    w-full md:w-1/2 bg-black/80 border border-[#1b1b1b] rounded-3xl overflow-hidden
+    flex flex-col md:flex-row 
+    min-h-[420px] 
+  "
+          >
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="space-y-5 max-w-xl p-8"
+              >
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+                  {heading}
+                </h1>
+
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                  {paragraph}
+                </p>
+
+                <Link
+                  to="/contact"
+                  className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md"
+                >
+                  {button}
+                </Link>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* RIGHT SIDE — Full Height Responsive Image */}
+          <div className="w-full md:w-1/2 bg-[#151515] flex items-stretch">
+            <img
+              src={image}
+              alt="AI Agent Builder Preview"
+              className="w-full h-full object-fit"
             />
           </div>
         </div>

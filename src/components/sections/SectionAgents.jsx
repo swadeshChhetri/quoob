@@ -11,82 +11,71 @@ export default function SectionAgents() {
         </h2>
 
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-        The Future of Enterprise Automation Starts  
+          The Future of Enterprise Automation Starts
           <br /> with
           <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-           AI Agents.
+            AI Agents.
           </span>
         </h1>
       </div>
 
-      {/* Container Card */}
-      <div className="bg-[#1b1b1b] border border-gray-800 rounded-3xl p-10 md:p-14 mt-10">
-        {/* Row 2 — Subtitle Left */}
-        <div className="max-w-3xl mb-14">
-          <h3 className="text-xl md:text-2xl font-medium">
-            AI that works with your team — and for you
-          </h3>
-        </div>
+      {/* Outer Section — full width like the reference */}
 
-        {/* Row 3 — Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-          {/* Left Column — Bullet Points */}
+      <div className="w-full bg-[#0f0f0f] rounded-3xl overflow-hidden mt-10 flex flex-col md:flex-row">
+        {/* LEFT SIDE */}
+        <div className="w-full md:w-1/2 bg-[#1b1b1b] px-10 md:px-14 py-14 flex flex-col justify-center">
+          <h3 className="text-2xl font-medium mb-10">
+          AI that powers your people, teams, and enterprise
+          </h3>
+
           <div className="space-y-8">
-            {/* Item 1 */}
             <div className="flex items-start gap-4">
               <div className="bg-lime-400 p-3 rounded-full">
                 <User size={20} className="text-black" />
               </div>
               <div>
                 <p className="text-lg font-medium mb-1">
-                  Individual productivity
+                Enterprise-Focused
                 </p>
                 <p className="text-gray-300">
-                  Research, analyze, ideate, and execute
+                AI that scales from individuals to the entire enterprise.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
             <div className="flex items-start gap-4">
               <div className="bg-lime-400 p-3 rounded-full">
                 <Users size={20} className="text-black" />
               </div>
               <div>
-                <p className="text-lg font-medium mb-1">Team efficiency</p>
+                <p className="text-lg font-medium mb-1">
+                Outcome-Driven
+                </p>
                 <p className="text-gray-300">
-                  Automate workflows and work in parallel
+                AI that boosts productivity, accelerates teams, and transforms enterprises.
                 </p>
               </div>
             </div>
 
-            {/* Item 3 */}
             <div className="flex items-start gap-4">
               <div className="bg-lime-400 p-3 rounded-full">
                 <Network size={20} className="text-black" />
               </div>
               <div>
                 <p className="text-lg font-medium mb-1">
-                  Enterprise transformation
+                Tech-Forward
                 </p>
                 <p className="text-gray-300">
-                  Coordinate work across teams & systems
+                Intelligent agents for people, teams, and enterprise systems.
                 </p>
               </div>
             </div>
-
-            <button className="text-lime-500 hover:opacity-80 transition flex items-center gap-2">
-              Learn more about use cases →
-            </button>
           </div>
+        </div>
 
-          {/* Right Column — Placeholder for Image */}
-          <div className="w-full aspect-[20/10] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
-            <img
-              src="/image/ai_work.jpg"
-              className="w-full h-full object-contain"
-            />
-          </div>
+        {/* RIGHT SIDE — Perfect Responsive Image */}
+        <div className="w-full md:w-1/2 bg-[#151515] flex items-stretch">
+          <img src="/image/ai_work.png" className="w-full h-full object-fit" />
         </div>
       </div>
     </section>

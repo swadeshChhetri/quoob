@@ -15,10 +15,10 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      {/* <Route path="/about" element={<About />} /> */}
       {/* <Route path="/services" element={<Services />} /> */}
-      <Route path="/products" element={<Products />} />
-      <Route path="/plans" element={<Plans />} />
+      {/* <Route path="/products" element={<Products />} /> */}
+      {/* <Route path="/plans" element={<Plans />} /> */}
       {/* <Route path="/faq" element={<FAQ />} /> */}
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />

@@ -5,25 +5,6 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="w-full bg-black text-white pt-24 pb-12 px-6 md:px-20">
-      {/* TOP CTA SECTION */}
-      <div className="text-center mb-20">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-10">
-          Start transforming work with
-          <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-            agents
-          </span>
-        </h2>
-
-        <div className="flex items-center justify-center gap-6 font-semibold">
-          <Link
-            to="/contact"
-            className="px-8 py-3 rounded-full border border-lime-400 text-white hover:bg-lime-400 hover:text-black transition"
-          >
-            Request a demo
-          </Link>
-        </div>
-      </div>
-
       {/* MAIN FOOTER GRID */}
       <div className="border-t border-gray-800 pt-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-40">
@@ -53,12 +34,12 @@ export default function Footer() {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/products">Product</Link>
               </li>
               <li>
                 <Link to="/plans">Pricing</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact">Request a demo</Link>
               </li>
@@ -69,14 +50,17 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Company</h4>
             <ul className="space-y-2 opacity-90">
-              <li>
+              {/* <li>
                 <a href="/about">About</a>
+              </li> */}
+               <li>
+                <a href="https://app.qyoob.ai/login">Login</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
               </li>
-              <li>Privacy Policy</li>
-              <li>Terms and conditions</li>
+              {/* <li>Privacy Policy</li>
+              <li>Terms and conditions</li> */}
             </ul>
           </div>
         </div>
