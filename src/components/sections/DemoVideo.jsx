@@ -19,7 +19,7 @@ export default function HeroSectionVideo() {
               playsInline
             >
               <source
-                src="https://swadeshnewsportal.s3.ap-south-1.amazonaws.com/Final Video.mp4"
+                src="https://swadeshassignments3.s3.ap-south-1.amazonaws.com/Qyoob Video Final.mp4"
                 type="video/mp4"
               />
             </video>
