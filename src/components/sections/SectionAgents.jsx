@@ -11,10 +11,10 @@ export default function SectionAgents() {
         </h2>
 
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-          Agents for the business,
-          <br /> governed by
+        The Future of Enterprise Automation Starts  
+          <br /> with
           <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-            IT.
+           AI Agents.
           </span>
         </h1>
       </div>
@@ -81,7 +81,7 @@ export default function SectionAgents() {
           </div>
 
           {/* Right Column — Placeholder for Image */}
-          <div className="w-full aspect-[16/10] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
+          <div className="w-full aspect-[20/10] bg-[#222]/40 rounded-3xl border border-gray-700 flex items-center justify-center overflow-hidden">
             <img
               src="/image/ai_work.jpg"
               className="w-full h-full object-contain"

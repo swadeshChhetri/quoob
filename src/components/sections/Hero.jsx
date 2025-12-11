@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import HeroSectionVideo from "./DemoVideo";
@@ -11,13 +9,13 @@ const dynamicContent = [
     paragraph:
       "Securely integrated with your tools and systems, working together to automate complex workflows across your organization.",
     button: "Contact Us",
-    image: "/image/createagent.png",
+    image: "/image/mainpage.jpg",
   },
   {
     heading: "Seamless, human-like collaboration with AI",
     paragraph: "Across text, voice, images, video, and your desktop.",
     button: "Try Demo",
-    image: "/image/createagent.png",
+    image: "/image/mainpage.jpg",
   },
 ];
 
@@ -45,14 +43,11 @@ export default function HeroSection() {
       {/* -------------------- TOP TEXT BLOCK -------------------- */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center space-y-6">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-5xl">
-          Agentic AI for the Modern Enterprise
+          Build Intelligent Agents for Every Workflow
         </h1>
 
         <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          Qyoob enables enterprises to automate complex, multi-step workflows
-          with agentic AI. By combining orchestration, secure data access, and
-          enterprise tool integrations, Qyoob delivers faster decisions, smarter
-          operations, and more natural interactions across every team.
+        Qyoob empowers enterprises to build and deploy advanced AI agents that automate complex, multi-step workflows. With powerful orchestration, secure data connectivity, and seamless integrations across enterprise tools, Qyoob enables faster decisions, smarter operations, and natural, human-like interactions for every team.
         </p>
       </div>
 
@@ -89,7 +84,10 @@ export default function HeroSection() {
                   {paragraph}
                 </p>
 
-                <Link to="/contact" className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md">
+                <Link
+                  to="/contact"
+                  className="bg-lime-400 hover:bg-lime-500 text-black font-medium px-6 py-3 rounded-md"
+                >
                   {button}
                 </Link>
               </motion.div>
