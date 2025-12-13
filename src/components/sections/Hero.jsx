@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion,AnimatePresence } from "framer-motion";
 import HeroSectionVideo from "./DemoVideo";
 import { Link } from "react-router-dom";
 
@@ -38,12 +38,13 @@ export default function HeroSection() {
     exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
   };
 
+
   return (
     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
       {/* -------------------- TOP TEXT BLOCK -------------------- */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center space-y-6">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-5xl">
-          Build Intelligent Agents for Every Workflow
+          Agentic AI for the Modern Enterprise
         </h1>
 
         <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
