@@ -4,7 +4,7 @@ import Header from "../components/sections/Header";
 import AgenticSection from "../components/sections/AgenticSection";
 import MultimodalSection from "../components/sections/MultiModal";
 import UseCases from "../components/sections/UseCases";
-import DataSource from "../components/sections/DataSource";
+import DataSourceImageSection from "../components/sections/DataSourceImage";
 import Footer from "../components/sections/Footer";
 
 export default function Services() {
@@ -15,7 +15,7 @@ export default function Services() {
       <AgenticSection />
       <MultimodalSection />
       <UseCases />
-      <DataSource />
+      <DataSourceImageSection />
       <Footer />
       </div>
     </section>

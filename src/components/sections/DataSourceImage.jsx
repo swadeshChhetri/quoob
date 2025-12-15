@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const DataSource = () => {
+const DataSourceImageSection = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -56,4 +56,4 @@ const DataSource = () => {
   );
 };
 
-export default DataSource;
+export default DataSourceImageSection;

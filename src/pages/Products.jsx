@@ -5,11 +5,11 @@ import AgenticSection from "../components/sections/AgenticSection";
 import AgentPlatformSection from "../components/sections/AgenticPlatform";
 import MultimodalSection from "../components/sections/MultiModal";
 import UseCases from "../components/sections/UseCases";
-import DataSource from "../components/sections/DataSource";
 import DemoVideoSection from "../components/sections/DemoVideo";
 import DemoImage from "../components/sections/DemoImage";
 import Footer from "../components/sections/Footer";
 import MainLayout from "../components/layout/MainLayout";
+import DataSourceImageSection from "../components/sections/DataSourceImage";
 
 export default function Products() {
   return (
@@ -18,7 +18,7 @@ export default function Products() {
       <AgentPlatformSection />
       <MultimodalSection />
       <UseCases />
-      <DataSource />
+      <DataSourceImageSection />
     </MainLayout>
   );
 }
