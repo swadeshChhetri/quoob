@@ -101,16 +101,8 @@
 
 // export default UseCases;
 
-
 import React from "react";
-import {
-  Cloud,
-  GitBranch,
-  Folder,
-  Kanban,
-  Zap,
-  Globe,
-} from "lucide-react";
+import { Cloud, GitBranch, Folder, Kanban, Zap, Globe } from "lucide-react";
 
 const useCases = [
   {
@@ -158,8 +150,7 @@ const useCases = [
 const UseCases = () => {
   return (
     <section id="services" className="text-white py-16 sm:py-20 lg:py-28">
-      <div className="container mx-auto">
-
+      <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4">
           Use{" "}
@@ -203,7 +194,6 @@ const UseCases = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

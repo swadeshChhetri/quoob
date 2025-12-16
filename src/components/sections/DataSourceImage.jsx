@@ -20,8 +20,7 @@ const DataSourceImageSection = () => {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-28">
-      <div className="container mx-auto">
-        
+      <div className="w-full">
         <motion.div
           className="
             relative max-w-5xl mx-auto rounded-xl 
@@ -50,7 +49,6 @@ const DataSourceImageSection = () => {
             "
           />
         </motion.div>
-
       </div>
     </section>
   );

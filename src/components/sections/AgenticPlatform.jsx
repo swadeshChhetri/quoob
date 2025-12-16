@@ -3,7 +3,7 @@ import React from "react";
 const SplitSection = () => {
   return (
     <section className="bg-black text-white py-16 sm:py-20 lg:py-28">
-      <div className="container mx-auto">
+      <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* LEFT SIDE – CONTENT */}
           <div className="space-y-6 sm:space-y-8">
@@ -45,7 +45,7 @@ const SplitSection = () => {
               <video
                 className="w-full h-full object-cover"
                 loop
-                // autoPlay
+                autoPlay
                 muted
                 playsInline
               >

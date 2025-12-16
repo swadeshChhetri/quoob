@@ -14,8 +14,7 @@ export default function MultimodalSection() {
       {/* Soft glowing background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
 
-      <div className="relative z-10 container mx-auto text-center max-w-5xl">
-        
+      <div className="relative z-10 text-center">
         {/* Icons */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 mb-12">
           {features.map((f, i) => (
@@ -50,4 +49,3 @@ export default function MultimodalSection() {
     </section>
   );
 }
-

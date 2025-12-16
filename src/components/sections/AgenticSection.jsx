@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AgenticSection = () => {
   return (
     <section id="about" className="bg-black text-white py-16 sm:py-20 lg:py-28">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         {/* LEFT CONTENT */}
         <div className="space-y-6">
           <p className="text-lime-400 font-semibold tracking-wide uppercase">
