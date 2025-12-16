@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { motion,AnimatePresence } from "framer-motion";
-import HeroSectionVideo from "./DemoVideo";
+import { motion, AnimatePresence } from "framer-motion";
+import HeroSectionVideo from "./MainVideo";
 import { Link } from "react-router-dom";
 
 const dynamicContent = [
@@ -37,7 +37,6 @@ export default function HeroSection() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
     exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
   };
-
 
   return (
     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
@@ -162,7 +161,7 @@ export default function HeroSection() {
             <img
               src={image}
               alt="AI Agent Builder Preview"
-              className="w-full h-full object-fit"
+              className="w-full h-full object-fill"
             />
           </div>
         </div>

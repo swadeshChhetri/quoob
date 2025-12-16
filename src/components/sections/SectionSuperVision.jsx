@@ -7,9 +7,7 @@ export default function SectionSupervision() {
       <div className="w-full bg-[#0f0f0f] rounded-3xl overflow-hidden mt-10 flex flex-col md:flex-row">
         {/* LEFT SIDE */}
         <div className="w-full md:w-1/2 bg-[#1b1b1b] px-10 md:px-14 py-14 flex flex-col justify-center">
-          <h4 className="text-2xl font-medium mb-10">
-            AI SUPERVISION
-          </h4>
+          <h4 className="text-2xl font-medium mb-10">AI SUPERVISION</h4>
 
           {/* <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-10">
             IT-friendly and built for
@@ -69,7 +67,7 @@ export default function SectionSupervision() {
         <div className="w-full md:w-1/2 bg-[#151515] flex items-stretch">
           <img
             src="/image/ai_supervision.png"
-            className="w-full h-full object-fit"
+            className="w-full h-full object-fill"
           />
         </div>
       </div>

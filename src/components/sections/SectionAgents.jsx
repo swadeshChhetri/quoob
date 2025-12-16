@@ -25,7 +25,7 @@ export default function SectionAgents() {
         {/* LEFT SIDE */}
         <div className="w-full md:w-1/2 bg-[#1b1b1b] px-10 md:px-14 py-14 flex flex-col justify-center">
           <h3 className="text-2xl font-medium mb-10">
-          AI that powers your people, teams, and enterprise
+            AI that powers your people, teams, and enterprise
           </h3>
 
           <div className="space-y-8">
@@ -34,11 +34,9 @@ export default function SectionAgents() {
                 <User size={20} className="text-black" />
               </div>
               <div>
-                <p className="text-lg font-medium mb-1">
-                Enterprise-Focused
-                </p>
+                <p className="text-lg font-medium mb-1">Enterprise-Focused</p>
                 <p className="text-gray-300">
-                AI that scales from individuals to the entire enterprise.
+                  AI that scales from individuals to the entire enterprise.
                 </p>
               </div>
             </div>
@@ -48,11 +46,10 @@ export default function SectionAgents() {
                 <Users size={20} className="text-black" />
               </div>
               <div>
-                <p className="text-lg font-medium mb-1">
-                Outcome-Driven
-                </p>
+                <p className="text-lg font-medium mb-1">Outcome-Driven</p>
                 <p className="text-gray-300">
-                AI that boosts productivity, accelerates teams, and transforms enterprises.
+                  AI that boosts productivity, accelerates teams, and transforms
+                  enterprises.
                 </p>
               </div>
             </div>
@@ -62,11 +59,9 @@ export default function SectionAgents() {
                 <Network size={20} className="text-black" />
               </div>
               <div>
-                <p className="text-lg font-medium mb-1">
-                Tech-Forward
-                </p>
+                <p className="text-lg font-medium mb-1">Tech-Forward</p>
                 <p className="text-gray-300">
-                Intelligent agents for people, teams, and enterprise systems.
+                  Intelligent agents for people, teams, and enterprise systems.
                 </p>
               </div>
             </div>
@@ -75,7 +70,7 @@ export default function SectionAgents() {
 
         {/* RIGHT SIDE — Perfect Responsive Image */}
         <div className="w-full md:w-1/2 bg-[#151515] flex items-stretch">
-          <img src="/image/ai_work.png" className="w-full h-full object-fit" />
+          <img src="/image/ai_work.png" className="w-full h-full object-fill" />
         </div>
       </div>
     </section>

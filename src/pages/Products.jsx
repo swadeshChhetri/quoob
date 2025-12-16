@@ -5,7 +5,7 @@ import AgenticSection from "../components/sections/AgenticSection";
 import AgentPlatformSection from "../components/sections/AgenticPlatform";
 import MultimodalSection from "../components/sections/MultiModal";
 import UseCases from "../components/sections/UseCases";
-import DemoVideoSection from "../components/sections/DemoVideo";
+import DemoVideoSection from "../components/sections/MainVideo";
 import DemoImage from "../components/sections/DemoImage";
 import Footer from "../components/sections/Footer";
 import MainLayout from "../components/layout/MainLayout";

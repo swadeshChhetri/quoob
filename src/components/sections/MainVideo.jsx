@@ -1,9 +1,8 @@
 import React from "react";
 import { CirclePlay } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function HeroSectionVideo() {
-  const navigate = useNavigate();
   return (
     <section id="home" className="relative py-10 sm:py-16 lg:py-20">
       <div className="container mx-auto ">
@@ -14,12 +13,12 @@ export default function HeroSectionVideo() {
             <video
               className="w-full h-full object-cover"
               muted
-              autoPlay
+              // autoPlay
               loop
               playsInline
             >
               <source
-                src="https://swadeshassignments3.s3.ap-south-1.amazonaws.com/Qyoob Video Final.mp4"
+                src="https://swadeshassignments3.s3.ap-south-1.amazonaws.com/Qyoob.mp4"
                 type="video/mp4"
               />
             </video>

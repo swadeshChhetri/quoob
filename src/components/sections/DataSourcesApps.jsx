@@ -1,48 +1,29 @@
-import { motion } from "framer-motion";
-
+import { MarqueeRow } from "../layout/MarqueeRow";
 import { integrations } from "../../data/integrations";
-import { containerVariants, itemVariants } from "../../utils/animations";
 
 export default function DataSourceApps() {
+  const row1 = integrations.filter((_, i) => i % 2 === 0);
+  const row2 = integrations.filter((_, i) => i % 2 !== 0);
   return (
-    <section className="py-24 text-white text-center">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative bg-black text-white py-20">
+      <div className="max-w-full text-center space-y-4">
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-          Connecting Data Source
+          Connect all your data sources with
           <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-            Apps
+            Qyoob
           </span>
         </h1>
+        <p className="text-gray-300">
+          Unify search, analytics, and AI workflows by securely connecting your
+          favorite data tools—without breaking permissions.
+        </p>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="
-  grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6
-  grid-rows-2
-  gap-6 mt-15
-"
-        >
-          {integrations.map((tool) => (
-            <motion.div
-              key={tool.name}
-              variants={itemVariants}
-              whileHover={{ y: -4 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-black px-5 py-4 backdrop-blur"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm">
-                <img src={tool.icon} alt={tool.name} className="h-6 w-6" />
-              </div>
-
-              <span className="text-sm font-medium white">
-                {tool.name}
-              </span>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="mt-16 overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-3 py-6">
+          <div className="relative space-y-6">
+            <MarqueeRow items={row1} direction="left" duration={35} />
+            <MarqueeRow items={row2} direction="right" duration={45} />
+          </div>
+        </div>
       </div>
     </section>
   );
