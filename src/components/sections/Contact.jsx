@@ -130,7 +130,11 @@ export default function ContactForm() {
                 Fill out the form below and we’ll get back to you ASAP.
               </p>
 
-              <form className="space-y-6">
+              <form
+                action="https://formspree.io/f/mnneeyrr"
+                method="POST"
+                className="space-y-6"
+              >
                 {/* Inputs Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -139,6 +143,7 @@ export default function ContactForm() {
                     </label>
                     <input
                       type="text"
+                      name="name"
                       required
                       placeholder="Enter your full name"
                       className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 text-white placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20"
@@ -151,6 +156,7 @@ export default function ContactForm() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       required
                       placeholder="Enter your email"
                       className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 text-white placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20"
@@ -165,6 +171,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     type="text"
+                    name="subject"
                     required
                     placeholder="What's this about?"
                     className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 text-white placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20"
@@ -178,13 +185,20 @@ export default function ContactForm() {
                   </label>
                   <textarea
                     rows="5"
+                    name="message"
                     required
                     placeholder="Tell us about your project or inquiry..."
                     className="w-full px-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 text-white placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400/20 resize-none"
                   />
                 </div>
 
-                {/* Button */}
+                {/* Honeypot spam protection */}
+                <input type="text" name="_gotcha" className="hidden" />
+
+                {/* Optional redirect after success */}
+                {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" /> */}
+
+                {/* Submit Button */}
                 <motion.button
                   type="submit"
                   whileHover={{ scale: 1.02 }}
