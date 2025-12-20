@@ -27,19 +27,51 @@ const Overview = () => {
       id="overview"
       className="text-white relative overflow-hidden py-16 sm:py-20 lg:py-28"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto space-y-24">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-left">
-          About{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-            Us
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
+          Built for the future of
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600 ml-3">
+            AI-driven work
           </span>
         </h2>
 
+        <div className="w-[80%] mx-auto bg-[#151515] flex items-center justify-center h-[75vh] overflow-hidden">
+          <img
+            src="/image/qyoobTeam.jpg"
+            alt="Enterprise AI platform overview"
+            className="w-full h-full object-fill"
+          />
+        </div>
+
         {/* Paragraph */}
-        <p className="text-gray-400 text-base sm:text-lg max-w-3xl mb-10 sm:mb-14 leading-relaxed">
-          Aliquet tellus imperdiet morbi tincidunt gravida nulla. Vitae cum vel
-          vulputate at mauri.
+        <p className="mt-8 text-gray-400 text-base sm:text-lg leading-relaxed max-w-4xl mx-auto text-center">
+          We’re building an AI agent platform designed for real business
+          operations — where multiple agents coordinate work across tools, data,
+          and teams to move from intent to execution at scale.
+        </p>
+
+        <h2 className="mt-20 text-3xl text-lime-300">
+          Enabling teams to think bigger and execute faster
+        </h2>
+
+        <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed max-w-4xl">
+          As organizations adopt AI, the challenge is no longer generating ideas
+          — it’s coordinating action. Our platform helps teams turn complex
+          goals into structured, repeatable workflows powered by collaborative
+          AI agents.
+        </p>
+
+        <h2 className="mt-20 text-3xl text-lime-300">
+          Built from the ground up for enterprise reality
+        </h2>
+
+        <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed max-w-4xl">
+          Modern enterprises operate across fragmented systems, processes, and
+          teams. Our approach is designed for this complexity — enabling
+          multi-agent workflows that respect organizational boundaries, shared
+          context, and long-term scale. The result is AI that fits how large
+          organizations actually work.
         </p>
 
         {/* Cards Grid */}

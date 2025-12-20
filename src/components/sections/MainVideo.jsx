@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 
 export default function HeroSectionVideo() {
   return (
-    <section id="home" className="relative py-10 sm:py-16 lg:py-20">
-      <div className="container mx-auto ">
-        {/* Video Wrapper */}
+    <section className="relative py-10 sm:py-16 lg:py-20">
+      {/* FULL WIDTH */}
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        {/* This padding MUST match MaxWrapper padding */}
+
         <div className="relative w-full rounded-3xl overflow-hidden shadow-lg">
-          {/* Video with proper responsive aspect ratio */}
+          {/* Aspect ratio */}
           <div className="w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[15/7]">
             <video
               className="w-full h-full object-cover"
               muted
-              autoPlay
               loop
               playsInline
             >
@@ -24,17 +25,13 @@ export default function HeroSectionVideo() {
             </video>
           </div>
 
-          {/* CTA Button */}
+          {/* CTA */}
           <div className="absolute inset-0 flex items-end justify-center pb-6 sm:pb-10 pointer-events-none">
             <Link
-              to="/contact" // <-- your internal route
-              className="
-      pointer-events-auto flex items-center gap-2
-      bg-lime-400 hover:bg-lime-500 
-      text-black font-semibold
-      px-6 sm:px-8 py-3 rounded-full 
-      transition shadow-lg hover:shadow-lime-400/30
-    "
+              to="/contact"
+              className="pointer-events-auto flex items-center gap-2
+                         bg-lime-400 hover:bg-lime-500 text-black font-semibold
+                         px-6 sm:px-8 py-3 rounded-full transition shadow-lg"
             >
               <CirclePlay size={20} />
               Request a demo

@@ -10,15 +10,23 @@ import DemoImage from "../components/sections/DemoImage";
 import Footer from "../components/sections/Footer";
 import MainLayout from "../components/layout/MainLayout";
 import DataSourceImageSection from "../components/sections/DataSourceImage";
+import ConnectorsSection from './../components/sections/ConnectorsSection';
+import FieldProductivity from './../components/sections/FieldProductivity';
+import RetailPlaybooks from './../components/sections/RetailPlaybooks';
+import OverviewSection from './../components/sections/OverviewSection';
 
 export default function Products() {
   return (
     <MainLayout>
+      <OverviewSection />
       <AgenticSection />
       <AgentPlatformSection />
       <MultimodalSection />
+      <ConnectorsSection />
       <UseCases />
       <DataSourceImageSection />
+      <FieldProductivity />
+      <RetailPlaybooks />
     </MainLayout>
   );
 }
