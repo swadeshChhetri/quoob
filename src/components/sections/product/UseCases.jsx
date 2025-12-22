@@ -47,7 +47,7 @@
 
 // const UseCases = () => {
 //   return (
-//     <section id="services" className="text-white py-16 sm:py-20 lg:py-28">
+//     <Section id="services" className="text-white py-16 sm:py-20 lg:py-28">
 //       <div className="container mx-auto">
 
 //         {/* Heading */}
@@ -95,7 +95,7 @@
 //         </div>
 
 //       </div>
-//     </section>
+//     </Section>
 //   );
 // };
 
@@ -103,6 +103,8 @@
 
 import React from "react";
 import { Cloud, GitBranch, Folder, Kanban, Zap, Globe } from "lucide-react";
+import Section from "../../layout/Section";
+import MaxWrapper from "../../layout/MaxWrapper";
 
 const useCases = [
   {
@@ -149,8 +151,8 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section id="services" className="text-white py-16 sm:py-20 lg:py-28">
-      <div className="w-full">
+    <Section id="services" className="text-white">
+      <MaxWrapper>
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4">
           Use{" "}
@@ -167,35 +169,41 @@ const UseCases = () => {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-          {useCases.map((useCase, index) => (
+          {useCases.map((useCase) => (
             <div
-              key={index}
+              key={useCase.title}
               className="
-                group rounded-2xl border border-lime-400/20
-                p-6 sm:p-8
-                shadow-[0_0_40px_-15px_rgba(163,255,102,0.2)]
-                transition-all duration-500
-                hover:shadow-[0_0_50px_-10px_rgba(163,255,102,0.4)]
-                hover:border-lime-400/40
-                hover:-translate-y-2
-              "
+        group
+        rounded-2xl
+        border border-white/10
+        bg-white/5
+        p-6 sm:p-8
+        transition-all duration-300
+        hover:border-lime-400/30
+        hover:bg-white/10
+        hover:shadow-[0_0_32px_-14px_rgba(163,255,102,0.22)]
+        hover:-translate-y-1
+      "
             >
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-lime-300">
+              {/* Title */}
+              <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-lime-300">
                 {useCase.title}
               </h3>
 
+              {/* Description */}
               <p className="text-gray-300 mb-6 leading-relaxed text-base sm:text-lg">
                 {useCase.description}
               </p>
 
-              <div className="flex gap-5 text-xl sm:text-2xl">
+              {/* Icons */}
+              <div className="flex gap-4 text-xl sm:text-2xl text-gray-300">
                 {useCase.icons}
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </MaxWrapper>
+    </Section>
   );
 };
 

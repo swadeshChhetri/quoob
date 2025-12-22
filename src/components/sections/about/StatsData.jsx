@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight, TrendingUp, Clock, Users, Target } from "lucide-react";
+import Section from "../../layout/Section";
+import MaxWrapper from "./../../layout/MaxWrapper";
 
 const statsData = [
   {
@@ -68,20 +70,21 @@ const CountUp = ({ value, suffix = "", duration = 2 }) => {
 
 const StatsSection = () => {
   return (
-    <section className="bg-black text-black">
-      <div className="">
-        <div className="text-center mb-16">
+    <Section className="bg-black text-black">
+      <MaxWrapper>
+        <div className="text-center space-y-8">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white bg-clip-text text-transparent"
           >
             Real Impact, Measured
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
               Results
             </span>
           </motion.h2>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,65 +94,66 @@ const StatsSection = () => {
             See how industry leaders are transforming their operations with
             AI-powered solutions
           </motion.p>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {statsData.map((item, index) => {
-            const IconComponent = item.icon;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-0 transition-opacity duration-300 rounded-3xl" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {statsData.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="group relative overflow-hidden text-start"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-0 transition-opacity duration-300 rounded-3xl" />
 
-                <div className="relative bg-[#111] rounded-3xl p-1 transition-all duration-300">
-                  <div className="bg-[#111] rounded-3xl p-8 flex items-stretch min-h-[220px]">
-                    {/* Left Section - Content */}
-                    <div className="flex-1 pr-6 flex flex-col justify-between">
-                      <div>
-                        <motion.div
-                          whileHover={{ scale: 1.05 }}
-                          className={`inline-flex items-center justify-center p-3 rounded-2xl bg-lime-500 mb-4`}
+                  <div className="relative bg-[#111] rounded-3xl p-1 transition-all duration-300">
+                    <div className="bg-[#111] rounded-3xl p-8 flex items-stretch min-h-[220px]">
+                      {/* Left Section - Content */}
+                      <div className="flex-1 pr-6 flex flex-col justify-between">
+                        <div>
+                          <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            className={`inline-flex items-center justify-center p-3 rounded-2xl bg-lime-500 mb-4`}
+                          >
+                            <IconComponent className="w-6 h-6" />
+                          </motion.div>
+                          <h3 className="text-xl font-semibold leading-tight text-gray-100 group-hover:text-white transition-colors">
+                            {item.title}
+                          </h3>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-400 group-hover:text-gray-300 transition-colors mt-4">
+                          <span className="text-sm font-medium">
+                            Case Study
+                          </span>
+                          <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                        </div>
+                      </div>
+
+                      {/* Right Section - Stats */}
+                      <div className="w-32 flex-shrink-0 flex flex-col items-center justify-center text-center border-l border-gray-800 pl-6 ml-6">
+                        <div
+                          className={`text-4xl font-bold bg-gradient-to-r bg-lime-400 bg-clip-text text-transparent mb-2`}
                         >
-                          <IconComponent className="w-6 h-6" />
-                        </motion.div>
-                        <h3 className="text-xl font-semibold leading-tight text-gray-100 group-hover:text-white transition-colors">
-                          {item.title}
-                        </h3>
+                          <CountUp
+                            value={item.value}
+                            suffix={item.suffix}
+                            duration={2}
+                          />
+                        </div>
+                        <p className="text-sm text-gray-400 font-medium leading-tight">
+                          {item.label}
+                        </p>
                       </div>
-                      <div className="flex items-center gap-2 text-gray-400 group-hover:text-gray-300 transition-colors mt-4">
-                        <span className="text-sm font-medium">Case Study</span>
-                        <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                      </div>
-                    </div>
-
-                    {/* Right Section - Stats */}
-                    <div className="w-32 flex-shrink-0 flex flex-col items-center justify-center text-center border-l border-gray-800 pl-6 ml-6">
-                      <div
-                        className={`text-4xl font-bold bg-gradient-to-r bg-lime-400 bg-clip-text text-transparent mb-2`}
-                      >
-                        <CountUp
-                          value={item.value}
-                          suffix={item.suffix}
-                          duration={2}
-                        />
-                      </div>
-                      <p className="text-sm text-gray-400 font-medium leading-tight">
-                        {item.label}
-                      </p>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+                </motion.div>
+              );
+            })}
+          </div>
 
-        {/* CTA Section
+          {/* CTA Section
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -165,8 +169,9 @@ const StatsSection = () => {
             <ArrowUpRight className="w-5 h-5" />
           </motion.button>
         </motion.div> */}
-      </div>
-    </section>
+        </div>
+      </MaxWrapper>
+    </Section>
   );
 };
 

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import MaxWrapper from "../../layout/MaxWrapper";
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(null);
+
   const contactInfo = [
     {
       icon: Mail,
@@ -34,12 +39,41 @@ export default function ContactForm() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+
+    const formData = new FormData(e.target);
+
+    try {
+      const res = await fetch("https://formspree.io/f/mnneeyrr", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error("Submission failed");
+      }
+
+      setIsSubmitted(true);
+      e.target.reset();
+    } catch (err) {
+      setError("Something went wrong. Please try again later.", err);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section
       id="contact"
       className="bg-black text-white py-16 sm:py-20 lg:py-28"
     >
-      <div className="container mx-auto">
+      <MaxWrapper>
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -47,7 +81,7 @@ export default function ContactForm() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14 sm:mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Get in touch with
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
               us
@@ -130,12 +164,17 @@ export default function ContactForm() {
                 Fill out the form below and we’ll get back to you ASAP.
               </p>
 
-              <form
-                action="https://formspree.io/f/mnneeyrr"
-                method="POST"
-                className="space-y-6"
-              >
-                {/* Inputs Grid */}
+              {/* Success Message */}
+
+              {/* Error Message */}
+              {error && (
+                <div className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-300 text-sm">
+                  {error}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Name + Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-300 mb-2">
@@ -192,27 +231,32 @@ export default function ContactForm() {
                   />
                 </div>
 
-                {/* Honeypot spam protection */}
+                {/* Honeypot */}
                 <input type="text" name="_gotcha" className="hidden" />
 
-                {/* Optional redirect after success */}
-                {/* <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" /> */}
-
-                {/* Submit Button */}
+                {/* Submit */}
                 <motion.button
                   type="submit"
+                  disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-lime-400 hover:bg-lime-500 text-black font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-lime-500/20 flex items-center justify-center gap-3"
+                  className="w-full bg-lime-400 hover:bg-lime-500 disabled:opacity-60 text-black font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-lime-500/20 flex items-center justify-center gap-3"
                 >
                   <Send className="w-5 h-5" />
-                  SEND MESSAGE
+                  {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
                 </motion.button>
               </form>
+
+              {isSubmitted && (
+                <div className="mt-6 rounded-xl border border-lime-400/30 bg-lime-400/10 p-4 text-lime-300 text-sm">
+                  Your message has been submitted successfully. Our team will
+                  get back to you shortly.
+                </div>
+              )}
             </div>
           </motion.div>
         </motion.div>
-      </div>
+      </MaxWrapper>
     </section>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import { CirclePlay } from "lucide-react";
 import { Link } from "react-router-dom";
+import Section from "../../layout/Section";
 
 export default function HeroSectionVideo() {
   return (
-    <section className="relative py-10 sm:py-16 lg:py-20">
+    <Section className="relative">
       {/* FULL WIDTH */}
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* This padding MUST match MaxWrapper padding */}
@@ -15,6 +16,7 @@ export default function HeroSectionVideo() {
             <video
               className="w-full h-full object-cover"
               muted
+              // // autoPlay
               loop
               playsInline
             >
@@ -39,6 +41,6 @@ export default function HeroSectionVideo() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

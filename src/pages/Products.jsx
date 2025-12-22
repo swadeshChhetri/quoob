@@ -1,32 +1,40 @@
 import React from "react";
 
-import Header from "../components/sections/Header";
-import AgenticSection from "../components/sections/AgenticSection";
-import AgentPlatformSection from "../components/sections/AgenticPlatform";
+// import AgenticSection from "../components/sections/AgenticSection";
+
+// import AgentPlatformSection from "../components/sections/AgenticPlatform";
+
 import MultimodalSection from "../components/sections/MultiModal";
-import UseCases from "../components/sections/UseCases";
-import DemoVideoSection from "../components/sections/MainVideo";
-import DemoImage from "../components/sections/DemoImage";
-import Footer from "../components/sections/Footer";
+// import UseCases from "../components/sections/UseCases";
+
 import MainLayout from "../components/layout/MainLayout";
-import DataSourceImageSection from "../components/sections/DataSourceImage";
-import ConnectorsSection from './../components/sections/ConnectorsSection';
-import FieldProductivity from './../components/sections/FieldProductivity';
-import RetailPlaybooks from './../components/sections/RetailPlaybooks';
-import OverviewSection from './../components/sections/OverviewSection';
+// import DataSourceImageSection from "../components/sections/DataSourceImage";
+// import ConnectorsSection from './../components/sections/ConnectorsSection';
+
+import FieldProductivity from "../components/sections/product/FieldProductivity";
+import RetailPlaybooks from "../components/sections/product/RetailPlaybooks";
+// import OverviewSection from './../components/sections/OverviewSection';
+
+import AgenticSection from "../components/sections/product/AgenticSection";
+import SplitSection from "../components/sections/product/AgenticPlatform";
+import UseCases from "../components/sections/product/UseCases";
+import ConnectorsSection from "../components/sections/product/ConnectorsSection";
+import OverviewSection from "../components/sections/product/OverviewSection";
+import QuickAction from "./../components/layout/QuickAction";
 
 export default function Products() {
   return (
     <MainLayout>
       <OverviewSection />
       <AgenticSection />
-      <AgentPlatformSection />
+      <SplitSection />
       <MultimodalSection />
       <ConnectorsSection />
       <UseCases />
-      <DataSourceImageSection />
+      {/* <DataSourceImageSection /> */}
       <FieldProductivity />
       <RetailPlaybooks />
+      <QuickAction />
     </MainLayout>
   );
 }

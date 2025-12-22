@@ -1,14 +1,17 @@
+import MaxWrapper from "../../layout/MaxWrapper";
+import Section from "../../layout/Section";
+
 export default function OverviewSection() {
   return (
-    <section className="bg-neutral-950 py-28 text-white">
-      <div className="container mx-auto px-6">
+    <Section className="bg-neutral-950 text-white">
+      <MaxWrapper>
         {/* Eyebrow */}
         <p className="text-lime-400 font-semibold tracking-wide uppercase">
           OVERVIEW
         </p>
 
         {/* Heading */}
-        <h2 className="max-w-4xl text-4xl sm:text-5xl font-semibold leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
           From isolated tasks <br />
           to coordinated execution at scale
         </h2>
@@ -66,7 +69,7 @@ export default function OverviewSection() {
             className="w-full h-auto object-cover"
           />
         </div>
-      </div>
-    </section>
+      </MaxWrapper>
+    </Section>
   );
 }

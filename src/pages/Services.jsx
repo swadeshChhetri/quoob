@@ -1,9 +1,9 @@
 import React from "react";
 
 import Header from "../components/sections/Header";
-import AgenticSection from "../components/sections/AgenticSection";
+import AgenticSection from "../components/sections/product/AgenticSection";
 import MultimodalSection from "../components/sections/MultiModal";
-import UseCases from "../components/sections/UseCases";
+import UseCases from "../components/sections/product/UseCases";
 import DataSourceImageSection from "../components/sections/DataSourceImage";
 import Footer from "../components/sections/Footer";
 

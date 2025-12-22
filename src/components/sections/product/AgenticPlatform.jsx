@@ -1,13 +1,15 @@
 import React from "react";
+import Section from "../../layout/Section";
+import MaxWrapper from "../../layout/MaxWrapper";
 
 const SplitSection = () => {
   return (
-    <section className="bg-black text-white py-16 sm:py-20 lg:py-28">
-      <div className="w-full">
+    <Section className="bg-black text-white">
+      <MaxWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* LEFT SIDE – CONTENT */}
-          <div className="space-y-6 sm:space-y-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Build agents in{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
                 minutes
@@ -45,7 +47,7 @@ const SplitSection = () => {
               <video
                 className="w-full h-full object-cover"
                 loop
-                autoPlay
+                // autoPlay
                 muted
                 playsInline
               >
@@ -58,8 +60,8 @@ const SplitSection = () => {
             <div className="absolute -bottom-3 -left-3 w-20 sm:w-32 h-20 sm:h-32 bg-blue-500/10 rounded-full blur-xl"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </MaxWrapper>
+    </Section>
   );
 };
 
