@@ -62,12 +62,15 @@ export default function OverviewSection() {
         </div>
 
         {/* Product Screenshot */}
-        <div className="mt-24 overflow-hidden rounded-3xl border border-white/10 bg-neutral-900">
-          <img
-            src="https://dummyimage.com/1400x800/111827/e5e7eb&text=Product+UI+Preview"
-            alt="Product UI overview"
-            className="w-full h-auto object-cover"
-          />
+        <div className="mt-24">
+          <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl border border-white/10 bg-neutral-900">
+            <img
+              src="image/retailPlaybooks.png"
+              alt="Product UI overview"
+              loading="lazy"
+              className="w-full aspect-[16/9] object-cover"
+            />
+          </div>
         </div>
       </MaxWrapper>
     </Section>

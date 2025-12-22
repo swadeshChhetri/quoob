@@ -10,7 +10,7 @@ export default function About() {
   return (
     <MainLayout>
       <Overview />
-      <PlatformCapabilities />
+      {/* <PlatformCapabilities /> */}
       <StatsSection />
       <OurValues />
     </MainLayout>

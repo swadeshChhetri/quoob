@@ -34,14 +34,14 @@ export default function RetailPlaybooks() {
         {/* =====================
             CONTENT ZONE
         ====================== */}
-        <div className="w-full bg-[#0f0f0f] rounded-3xl overflow-hidden flex flex-col lg:flex-row min-h-[520px]">
+        <div className="w-full bg-[#0f0f0f] rounded-3xl overflow-hidden flex flex-col lg:flex-row min-h-[420px]">
           {/* LEFT – IMAGE */}
-          <div className="w-full lg:w-1/2 bg-[#151515] flex items-center justify-center p-8">
+          <div className="w-full lg:w-1/2 bg-[#151515] flex items-center justify-center">
             <img
-              src="https://dummyimage.com/900x600/1f2937/ffffff&text=Retail+Workflow+Preview"
+              src="image/retailPlaybooks.png"
               alt="Retail workflow preview"
               loading="lazy"
-              className="w-full max-w-[720px] rounded-2xl object-cover shadow-[0_0_60px_-15px_rgba(0,0,0,0.6)]"
+              className="w-full h-full rounded-2xl object-fit shadow-[0_0_60px_-15px_rgba(0,0,0,0.6)]"
             />
           </div>
 

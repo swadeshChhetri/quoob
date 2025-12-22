@@ -123,12 +123,12 @@ const StatsSection = () => {
                             {item.title}
                           </h3>
                         </div>
-                        <div className="flex items-center gap-2 text-gray-400 group-hover:text-gray-300 transition-colors mt-4">
+                        {/* <div className="flex items-center gap-2 text-gray-400 group-hover:text-gray-300 transition-colors mt-4">
                           <span className="text-sm font-medium">
                             Case Study
                           </span>
                           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                        </div>
+                        </div> */}
                       </div>
 
                       {/* Right Section - Stats */}

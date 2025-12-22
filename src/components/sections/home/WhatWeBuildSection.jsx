@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import HeroSectionVideo from "./MainVideo";
 import { Link } from "react-router-dom";
-import MaxWrapper from "../components/layout/MaxWrapper";
+// import MaxWrapper from "../components/layout/MaxWrapper";
+import MaxWrapper from "../../layout/MaxWrapper";
 import Section from "../../layout/Section";
 
 const dynamicContent = [

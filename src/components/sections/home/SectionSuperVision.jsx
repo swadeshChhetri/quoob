@@ -12,15 +12,6 @@ export default function SectionSupervision() {
           <div className="w-full md:w-1/2 bg-[#1b1b1b] px-10 md:px-14 py-14 flex flex-col justify-center">
             <h4 className="text-2xl font-medium mb-10">AI SUPERVISION</h4>
 
-            {/* <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-10">
-            IT-friendly and built for
-            <br />
-            enterprise
-            <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
-              scale
-            </span>
-          </h2> */}
-
             <div className="space-y-8">
               {/* Item 1 */}
               <div className="flex items-start gap-4">

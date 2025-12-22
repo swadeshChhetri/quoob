@@ -6,7 +6,7 @@ const SplitSection = () => {
   return (
     <Section className="bg-black text-white">
       <MaxWrapper>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           {/* LEFT SIDE – CONTENT */}
           <div className="space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
@@ -45,13 +45,13 @@ const SplitSection = () => {
             "
             >
               <video
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
                 loop
                 autoPlay
                 muted
                 playsInline
               >
-                <source src="/video/qyoob.mp4" type="video/mp4" />
+                <source src="/video/builtAgent.mp4" type="video/mp4" />
               </video>
             </div>
 

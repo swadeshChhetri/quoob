@@ -68,24 +68,24 @@ function OwnIcon() {
 ------------------------------ */
 const VALUES = [
   {
-    id: "connect",
-    title: "Connect",
+    id: "responsibility",
+    title: "Responsibility",
     description:
-      "We believe meaningful progress happens when people, systems, and context come together. We focus on creating shared understanding across teams and tools, so decisions are informed, aligned, and easier to act on.",
+      "Security, reliability, and governance are at the center of everything we build. Qyoob ensures that data remains protected, policies are enforced, and every AI-driven action can be traced, explained, and trusted. This commitment enables organizations to scale confidently and compliantly.",
     Icon: ConnectIcon,
   },
   {
-    id: "challenge",
-    title: "Challenge",
+    id: "collaboration",
+    title: "Collaboration",
     description:
-      "We question assumptions, test ideas in real systems, and measure progress by outcomes — not opinions. Constructive disagreement is encouraged, because better decisions come from pressure-testing ideas against reality.",
+      "Work transforms when people and systems connect. Qyoob unifies workflows, knowledge, and teams across the enterprise — helping organizations operate as one. This spirit of collaboration extends internally and externally, driving partnerships built on shared success and mutual growth.",
     Icon: ChallengeIcon,
   },
   {
-    id: "own",
-    title: "Own",
+    id: "alwaysImproving",
+    title: "Always Improving",
     description:
-      "We take responsibility for outcomes, not just ideas. Ownership means designing solutions that hold up over time, making trade-offs consciously, and following work through until it delivers real impact.",
+      "We believe progress is continuous. Qyoob evolves with every insight, interaction, and iteration. Our mindset is to learn consistently, improve rapidly, and innovate boldly — ensuring customers stay ahead in a world that never stops changing.",
     Icon: OwnIcon,
   },
 ];
@@ -129,7 +129,7 @@ export default function OurValuesSection() {
       <MaxWrapper>
         {/* Heading */}
         <div className="text-center space-y-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Our values</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">The Principles That Drive Us</h2>
 
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

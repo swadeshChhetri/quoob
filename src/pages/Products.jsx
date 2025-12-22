@@ -32,8 +32,8 @@ export default function Products() {
       <ConnectorsSection />
       <UseCases />
       {/* <DataSourceImageSection /> */}
-      <FieldProductivity />
-      <RetailPlaybooks />
+      {/* <FieldProductivity /> */}
+      {/* <RetailPlaybooks /> */}
       <QuickAction />
     </MainLayout>
   );

@@ -67,18 +67,18 @@ export const connectors = [
     name: "Databricks", 
     icon: "https://writer.com/wp-content/uploads/2025/11/Frame-2055246813-2.svg" 
   },
-  { 
-    name: "Snowflake", 
-    icon: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" 
-  },
+  // { 
+  //   name: "Snowflake", 
+  //   icon: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" 
+  // },
 
-  // --- Finance & Research (Updated to Clearbit API) ---
-  { 
-    name: "PitchBook", 
-    icon: "https://writer.com/wp-content/uploads/2025/11/Frame-2055246813-3.svg" 
-  },
-  { 
-    name: "FactSet", 
-    icon: "https://writer.com/wp-content/uploads/2025/11/Frame-2055246813-4.svg" 
-  },
+  // // --- Finance & Research (Updated to Clearbit API) ---
+  // { 
+  //   name: "PitchBook", 
+  //   icon: "https://writer.com/wp-content/uploads/2025/11/Frame-2055246813-3.svg" 
+  // },
+  // { 
+  //   name: "FactSet", 
+  //   icon: "https://writer.com/wp-content/uploads/2025/11/Frame-2055246813-4.svg" 
+  // },
 ];

@@ -40,12 +40,12 @@ export default function Footer() {
                 <li>
                   <Link to="/">Home</Link>
                 </li>
+                <li>
+                  <a href="https://app.qyoob.ai/login">Login</a>
+                </li>
                 {/* <li>
-                <Link to="/products">Product</Link>
-              </li>
-              <li>
-                <Link to="/plans">Pricing</Link>
-              </li> */}
+                  <Link to="/plans">Pricing</Link>
+                </li> */}
                 <li>
                   <Link to="/contact">Request a demo</Link>
                 </li>
@@ -60,11 +60,14 @@ export default function Footer() {
                 <a href="/about">About</a>
               </li> */}
                 <li>
-                  <a href="https://app.qyoob.ai/login">Login</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <Link to="/about">Products</Link>
                 </li>
+                {/* <li>
+                  <a href="/contact">Contact</a>
+                </li> */}
                 {/* <li>Privacy Policy</li>
               <li>Terms and conditions</li> */}
               </ul>
@@ -106,29 +109,22 @@ export default function Footer() {
             >
               <Linkedin size={20} className="hover:text-white cursor-pointer" />
             </a>
-
-            {/* <a
-            href="https://twitter.com/your-handle"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter size={20} className="hover:text-white cursor-pointer" />
-          </a>
-
-          <a
-            href="https://github.com/your-username"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github size={20} className="hover:text-white cursor-pointer" />
-          </a> */}
           </div>
 
           <div className="flex items-center gap-4">
             <span>|</span>
-            <span className="cursor-pointer hover:text-white">TERMS</span>
+            <a
+              href="/legal/Terms&Conditions.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              TERMS & CONDITIONS
+            </a>
             <span>|</span>
-            <span className="cursor-pointer hover:text-white">PRIVACY</span>
+            <span className="cursor-pointer hover:text-white">
+              PRIVACY POLICY
+            </span>
           </div>
         </div>
       </MaxWrapper>

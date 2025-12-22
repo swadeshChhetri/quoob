@@ -4,8 +4,8 @@ import Section from "./Section";
 
 const QuickAction = () => {
   return (
-    <Section className="text-center">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-white">
+    <Section className="text-center space-y-8">
+      <h2 className="text-3xl md:text-4xl font-semibold text-white">
         Start transforming work with
         <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">
           agents
